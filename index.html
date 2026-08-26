@@ -404,6 +404,11 @@
     border-top:1px solid var(--line-on-dark);
   }
   .footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px;}
+  .footer-right{display:flex; align-items:center; gap:22px; flex-wrap:wrap;}
+  .footer-social{display:flex; align-items:center; gap:16px;}
+  .footer-social a{color:var(--ink-text-dim); display:inline-flex; transition:color .2s ease;}
+  .footer-social a:hover{color:var(--gold-bright);}
+  .footer-social svg{width:18px; height:18px; fill:currentColor; display:block;}
   footer{font-family:'IBM Plex Mono', monospace; font-size:0.76rem; letter-spacing:0.02em;}
   footer a{text-decoration:none; color:var(--ink-text-dim); transition:color .2s ease;}
   footer a:hover{color:var(--gold-bright);}
@@ -832,7 +837,17 @@
 <footer>
   <div class="wrap footer-inner">
     <span>© <span id="year"></span> Robert Stephenson</span>
-    <a href="mailto:robert_stephenson@me.com">robert_stephenson@me.com</a>
+    <div class="footer-right">
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/robert-stephenson1/" target="_blank" rel="noopener" aria-label="Robert Stephenson on LinkedIn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/creativerobert/" target="_blank" rel="noopener" aria-label="Robert Stephenson on Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.22.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.22.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.22-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.22.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.22-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.05-.41-2.22-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.22.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.22-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.12 4.9.32 4.14.62c-.79.31-1.46.72-2.13 1.39A5.9 5.9 0 0 0 .62 4.14C.32 4.9.12 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.05 1.27.25 2.15.55 2.91.31.79.72 1.46 1.39 2.13a5.9 5.9 0 0 0 2.13 1.39c.76.3 1.64.5 2.91.55 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.27-.05 2.15-.25 2.91-.55a5.9 5.9 0 0 0 2.13-1.39 5.9 5.9 0 0 0 1.39-2.13c.3-.76.5-1.64.55-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.05-1.27-.25-2.15-.55-2.91a5.9 5.9 0 0 0-1.39-2.13A5.9 5.9 0 0 0 19.86.62c-.76-.3-1.64-.5-2.91-.55C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-9.6a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+        </a>
+      </div>
+      <a href="mailto:robert_stephenson@me.com">robert_stephenson@me.com</a>
+    </div>
   </div>
 </footer>
 

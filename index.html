@@ -195,6 +195,13 @@
     border:1px solid var(--gold);
   }
   .btn-primary:hover{background:var(--gold-bright); border-color:var(--gold-bright); transform:translateY(-1px);}
+  .cta-row{margin-top:38px; display:flex; align-items:center; gap:20px; flex-wrap:wrap;}
+  .cta-row .btn-primary{margin-top:0;}
+  .cta-row .cta-secondary{
+    font-family:'IBM Plex Mono', monospace; font-size:0.82rem; color:var(--ink-text-dim);
+    text-decoration:underline; text-underline-offset:3px; transition:color .2s ease;
+  }
+  .cta-row .cta-secondary:hover{color:var(--gold-bright);}
   .btn-ghost-dark{
     border:1px solid var(--line-on-dark); color:var(--ink-text); margin-top:38px; background:transparent;
   }
@@ -392,6 +399,7 @@
   }
   .closing p.sub{margin-top:24px; font-size:1.1rem; color:var(--ink-text-dim); max-width:44ch; margin-left:auto; margin-right:auto;}
   .closing .btn-primary{display:inline-block;}
+  .closing .cta-row{justify-content:center;}
   .closing-sig{
     margin-top:70px; padding-top:34px; border-top:1px solid var(--line-on-dark);
     font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--ink-text-dim); letter-spacing:0.02em; line-height:2;
@@ -498,7 +506,7 @@
       <a href="#testimonials">Testimonials</a>
       <a href="#ways">Ways of working</a>
     </nav>
-    <a class="nav-cta" href="mailto:robert_stephenson@me.com?subject=Starting%20a%20conversation">Start a conversation</a>
+    <a class="nav-cta" href="https://calendly.com/robertstephenson/20-minute-chat" target="_blank" rel="noopener">Book a chat</a>
   </div>
 </header>
 
@@ -517,7 +525,10 @@
           ICF Professional Certified Coach · Managing Partner, Zenith Leadership
         </p>
         <p class="hero-for">For senior leaders, executive teams and organisations navigating growth, change, complexity and the very human business of leadership.</p>
-        <a class="btn btn-primary" href="mailto:robert_stephenson@me.com?subject=Starting%20a%20conversation">Start a conversation →</a>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" target="_blank" rel="noopener">Book a 20-minute chat →</a>
+          <a class="cta-secondary" href="mailto:robert_stephenson@me.com?subject=Starting%20a%20conversation">or send me a message</a>
+        </div>
       </div>
       <div class="constellation-wrap">
         <div class="photo-slot slot-tall" style="width:100%;">
@@ -820,7 +831,10 @@
       <p class="closing-list">A bigger role. A changing organisation.<br>A team that needs something different.<br>A difficult decision.</p>
       <h2>Or perhaps nothing is obviously wrong. You simply know there is another level of leadership available to you.</h2>
       <p class="sub">We can start there. No performance. No need to arrive with the answer. Just a conversation about where you are, what is happening and what might become possible.</p>
-      <a class="btn btn-primary" href="mailto:robert_stephenson@me.com?subject=Let%27s%20have%20a%20conversation">Let's have a conversation →</a>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" target="_blank" rel="noopener">Book a 20-minute chat →</a>
+        <a class="cta-secondary" href="mailto:robert_stephenson@me.com?subject=Let%27s%20have%20a%20conversation">or send me a message</a>
+      </div>
       <div class="photo-slot slot-square" style="max-width:180px; margin:56px auto 0; border-radius:50%;">
         <img src="closing-cta.jpg" alt="Close, approachable portrait of Robert Stephenson wearing glasses" loading="lazy">
       </div>

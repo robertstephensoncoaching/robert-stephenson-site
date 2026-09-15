@@ -497,6 +497,7 @@
   .full-bleed{width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw);}
   .slot-tall{aspect-ratio:2/3;}
 </style>
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>
 
@@ -516,7 +517,7 @@
       <a href="#testimonials">Testimonials</a>
       <a href="#ways">Ways of working</a>
     </nav>
-    <a class="nav-cta" href="https://calendly.com/robertstephenson/20-minute-chat" target="_blank" rel="noopener">Book a chat</a>
+    <a class="nav-cta" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a chat</a>
   </div>
 </header>
 
@@ -536,7 +537,7 @@
         </p>
         <p class="hero-for">For senior leaders, executive teams and organisations navigating growth, change, complexity and the very human business of leadership.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" target="_blank" rel="noopener">Book a 20-minute chat →</a>
+          <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a 20-minute chat →</a>
           <a class="cta-secondary" href="mailto:robert@robertstephensoncoaching.com?subject=Starting%20a%20conversation">or send me a message</a>
         </div>
       </div>
@@ -606,7 +607,7 @@
             <div class="shift-item">&ldquo;I thought I was stuck. Now I can see the choices I hadn't been able to see before.&rdquo;</div>
           </div>
           <div class="cta-row">
-            <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" target="_blank" rel="noopener">Book a 20-minute chat →</a>
+            <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a 20-minute chat →</a>
             <a class="cta-secondary" href="mailto:robert@robertstephensoncoaching.com?subject=Executive%20Coaching">or email me about coaching</a>
           </div>
         </div>
@@ -628,7 +629,7 @@
           </div>
           <p style="margin-top:16px; color:var(--muted); font-size:0.95rem;">Programmes can be standalone interventions or form part of a wider leadership development journey.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" target="_blank" rel="noopener">Book a 20-minute chat →</a>
+            <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a 20-minute chat →</a>
             <a class="cta-secondary" href="mailto:robert@robertstephensoncoaching.com?subject=Leadership%20Facilitation">or email me about your organisation</a>
           </div>
         </div>
@@ -676,7 +677,7 @@
           </div>
           <p style="margin-top:30px; color:var(--body-text); font-size:1.02rem; max-width:56ch;">The result isn't nine people wearing personality labels. It's a team with a richer language for understanding itself, and considerably more choice about how it works together.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" target="_blank" rel="noopener">Book a 20-minute chat →</a>
+            <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a 20-minute chat →</a>
             <a class="cta-secondary" href="mailto:robert@robertstephensoncoaching.com?subject=Enneagram%20Work">or email me about Enneagram work</a>
           </div>
         </div>
@@ -858,7 +859,7 @@
       <h2>Or perhaps nothing is obviously wrong. You simply know there is another level of leadership available to you.</h2>
       <p class="sub">We can start there. No performance. No need to arrive with the answer. Just a conversation about where you are, what is happening and what might become possible.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" target="_blank" rel="noopener">Book a 20-minute chat →</a>
+        <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a 20-minute chat →</a>
         <a class="cta-secondary" href="mailto:robert@robertstephensoncoaching.com?subject=Let%27s%20have%20a%20conversation">or send me a message</a>
       </div>
       <div class="photo-slot slot-square" style="max-width:180px; margin:56px auto 0; border-radius:50%;">
@@ -887,6 +888,7 @@
         </a>
       </div>
       <a href="mailto:robert@robertstephensoncoaching.com">robert@robertstephensoncoaching.com</a>
+      <a href="/privacy.html" style="color:var(--ink-text-dim); font-family:'IBM Plex Mono', monospace; font-size:0.78rem;">Privacy Policy</a>
     </div>
   </div>
 </footer>
@@ -909,7 +911,17 @@
     }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
     reveals.forEach(function(el){ io.observe(el); });
   }
+
+  function openCalendly(e){
+    if (window.Calendly) {
+      e.preventDefault();
+      Calendly.initPopupWidget({url: 'https://calendly.com/robertstephenson/20-minute-chat'});
+      return false;
+    }
+    return true; // Calendly script not loaded yet — fall back to normal link navigation
+  }
 </script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
 </body>
 </html>

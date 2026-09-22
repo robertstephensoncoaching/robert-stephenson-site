@@ -88,21 +88,17 @@
   }
 
   /* PAGE INTRO */
-  .page-hero{background:var(--ink); color:var(--ink-text); padding:80px 0 64px;}
-  .page-hero .eyebrow{
+  .hero{background:var(--ink); color:var(--ink-text); padding:64px 0 88px;}
+  .hero .eyebrow{
     font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;
     color:var(--gold); display:flex; align-items:center; gap:10px; margin-bottom:18px;
   }
-  .page-hero .eyebrow::before{content:""; width:24px; height:1px; background:var(--gold);}
-  .page-hero h1{
-    font-family:'Fraunces', serif; font-weight:500; font-size:clamp(2.1rem,4.2vw,3rem);
-    margin:0 0 18px; max-width:16ch;
-  }
-  .page-hero .lede{
-    font-family:'Fraunces', serif; font-style:italic; font-size:1.15rem; color:var(--ink-text-dim);
-    max-width:60ch; margin:0 0 28px;
-  }
-  .page-hero p.intro-body{max-width:66ch; color:var(--ink-text-dim); font-size:1.02rem; margin:0 0 12px;}
+  .hero .eyebrow::before{content:""; width:24px; height:1px; background:var(--gold);}
+  .hero h1{font-family:'Fraunces', serif; font-weight:500; font-size:clamp(2.2rem,4.4vw,3.2rem); margin:0 0 22px;}
+  .hero .lede{font-family:'Fraunces', serif; font-style:italic; font-size:1.15rem; color:var(--ink-text-dim); max-width:56ch; margin:0 0 12px;}
+  .body-copy{max-width:66ch;}
+  .body-copy p{font-size:1.04rem; margin:0 0 18px; color:var(--body-text);}
+  .prompt-q{font-family:'Fraunces', serif; font-style:italic; font-size:1.15rem; color:var(--ink); margin:28px 0 0; padding-left:18px; border-left:2px solid var(--gold); max-width:56ch;}
   .breadcrumb{font-family:'IBM Plex Mono', monospace; font-size:0.76rem; color:var(--ink-text-dim); margin-bottom:28px;}
   .breadcrumb a{color:var(--ink-text-dim); text-decoration:none; border-bottom:1px solid var(--line-on-dark);}
   .breadcrumb a:hover{color:var(--gold-bright);}
@@ -215,7 +211,7 @@
 
   @media (max-width: 700px){
     .wrap{padding:0 20px;}
-    .page-hero{padding:56px 0 44px;}
+    .hero{padding:56px 0 44px;}
   }
 </style>
 </head>
@@ -243,15 +239,22 @@
 
 <main id="main">
 
-  <section class="page-hero">
+  <section class="hero">
     <div class="wrap">
       <div class="breadcrumb"><a href="/">Home</a> / Questions</div>
       <div class="eyebrow">Questions leaders ask</div>
       <h1>Questions leaders ask before we work together</h1>
       <p class="lede">Straightforward answers about executive coaching, leadership teams, facilitation and the Enneagram.</p>
-      <p class="intro-body">You may know that something needs to change without yet knowing what kind of support would be most useful. You might be stepping into a bigger role, navigating pressure or complexity, trying to change how a leadership team works, or looking for someone capable of holding an important room.</p>
-      <p class="intro-body">These are answers to the questions senior leaders, HR professionals, organisational sponsors and leadership teams commonly ask me. They are not intended to persuade you that coaching, facilitation or the Enneagram is always the answer. Sometimes it is. Sometimes something else is needed.</p>
-      <p class="intro-body">The first task is to understand what is actually happening.</p>
+    </div>
+  </section>
+
+  <section style="padding:56px 0 0;">
+    <div class="wrap">
+      <div class="body-copy">
+        <p>You may know that something needs to change without yet knowing what kind of support would be most useful. You might be stepping into a bigger role, navigating pressure or complexity, trying to change how a leadership team works, or looking for someone capable of holding an important room.</p>
+        <p>These are answers to the questions senior leaders, HR professionals, organisational sponsors and leadership teams commonly ask me. They are not intended to persuade you that coaching, facilitation or the Enneagram is always the answer. Sometimes it is. Sometimes something else is needed.</p>
+        <p class="prompt-q">The first task is to understand what is actually happening.</p>
+      </div>
     </div>
   </section>
 

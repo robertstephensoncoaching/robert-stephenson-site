@@ -48,6 +48,10 @@
   .nav-links a:hover{color:var(--gold-bright); border-bottom-color:var(--gold);}
   .nav-cta{font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--ink); background:var(--parchment); padding:10px 18px; border-radius:2px; text-decoration:none; white-space:nowrap; border:1px solid var(--parchment); transition:background .2s ease, color .2s ease;}
   .nav-cta:hover{background:transparent; color:var(--ink-text); border-color:var(--line-on-dark);}
+  .brand-link{transition:opacity .2s ease;}
+  .brand-link:hover{opacity:1;}
+  .brand-link:hover .nav-name{color:var(--gold-bright);}
+  .brand-link:hover .nav-avatar{box-shadow:0 0 0 2px var(--gold);}
   @media (max-width: 980px){ .nav-links{display:none;} }
   @media (max-width: 480px){ .nav-name span{display:none;} .nav-cta{font-size:0.7rem; padding:8px 12px;} .nav-inner{gap:12px;} }
 
@@ -172,7 +176,7 @@
 
 <header class="site-nav">
   <div class="nav-inner">
-    <a href="/" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+    <a href="/" class="brand-link" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
       <img class="nav-avatar" src="speaking-headshot.jpg" alt="Robert Stephenson" loading="eager">
       <div class="nav-name">Robert Stephenson<span>Executive Coach<br>Master Facilitator</span></div>
     </a>
@@ -198,7 +202,7 @@
           <div class="eyebrow">03 · What sits underneath</div>
           <h1>Enneagram for Leaders &amp; Teams</h1>
           <p class="lede">It doesn't simply describe what you do. It begins to illuminate why you do it.</p>
-          <p style="color:var(--ink-text-dim); max-width:56ch;">The Enneagram provides something many personality tools don't.</p>
+          <p style="color:var(--ink-text-dim); max-width:56ch;">The Enneagram provides something many personality tools don't. Used well, it gives leaders a sophisticated lens through which to understand motivation, communication, conflict, decision making, stress and the patterns they bring into relationships.</p>
         </div>
         <div class="hero-image">
           <img src="enneagram-floormat.jpg" alt="A leadership team gathered around a large Enneagram floor map during a team development session, with Robert Stephenson standing within the group" loading="eager">
@@ -209,9 +213,6 @@
 
   <section>
     <div class="wrap">
-      <div class="body-copy">
-        <p>Used well, it gives leaders a sophisticated lens through which to understand motivation, communication, conflict, decision making, stress and the patterns they bring into relationships.</p>
-      </div>
       <div class="subgrid">
         <div>
           <h3>Individual Enneagram</h3>

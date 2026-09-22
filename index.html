@@ -130,6 +130,10 @@
     white-space:nowrap; flex-shrink:0;
   }
   .nav-cta:hover{border-color:var(--gold); color:var(--gold-bright);}
+  .brand-link{transition:opacity .2s ease;}
+  .brand-link:hover{opacity:1;}
+  .brand-link:hover .nav-name{color:var(--gold-bright);}
+  .brand-link:hover .nav-avatar{box-shadow:0 0 0 2px var(--gold);}
 
   /* SECTIONS: base */
   section{padding:96px 0;}
@@ -505,10 +509,10 @@
 
 <header class="site-nav">
   <div class="nav-inner">
-    <div style="display:flex; align-items:center; gap:12px;">
+    <a href="/" class="brand-link" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
       <img class="nav-avatar" src="speaking-headshot.jpg" alt="Robert Stephenson" loading="eager">
       <div class="nav-name">Robert Stephenson<span>Executive Coach<br>Master Facilitator</span></div>
-    </div>
+    </a>
     <nav class="nav-links" aria-label="Page sections">
       <a href="coaching.html">Coaching</a>
       <a href="facilitation.html">Facilitation</a>

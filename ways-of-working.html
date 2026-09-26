@@ -33,6 +33,7 @@
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
+  :focus-visible{outline:2px solid var(--gold-bright); outline-offset:3px;}
   body{margin:0; background:var(--parchment); color:var(--body-text); font-family:'Work Sans', sans-serif; font-weight:300; line-height:1.7;}
   .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
   img{max-width:100%; display:block;}
@@ -151,9 +152,18 @@
   .client-cloud span{font-family:'Fraunces', serif; font-style:italic; font-size:1rem; color:var(--ink);}
 
   .ways-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-on-light); border:1px solid var(--line-on-light); margin-top:8px;}
-  .way-card{background:var(--parchment); padding:32px;}
+  .way-card{
+    background:var(--parchment); padding:32px; display:flex; flex-direction:column; gap:6px;
+    text-decoration:none; color:inherit; transition:background .2s ease;
+  }
+  .way-card:hover, .way-card:focus-visible{background:var(--parchment-2);}
   .way-card-wide{grid-column:span 3;}
   .way-card p{color:var(--muted); font-size:0.96rem; margin:0;}
+  .way-card .way-link{
+    margin-top:16px; font-family:'IBM Plex Mono', monospace; font-size:0.76rem; letter-spacing:0.02em;
+    color:var(--ink);
+  }
+  .way-card:hover .way-link{color:var(--gold);}
   @media (max-width: 880px){ .ways-grid{grid-template-columns:1fr 1fr;} .way-card-wide{grid-column:span 2;} }
   @media (max-width: 600px){ .ways-grid{grid-template-columns:1fr;} .way-card-wide{grid-column:span 1;} }
 
@@ -258,34 +268,41 @@
   <section>
     <div class="wrap">
       <div class="ways-grid">
-        <div class="way-card">
+        <a class="way-card" href="coaching.html">
           <h3>Executive Coaching</h3>
-          <p>One-to-one partnerships with senior leaders and executives.</p>
-        </div>
-        <div class="way-card">
-          <h3>Leadership Team Development</h3>
-          <p>Working with leadership teams around relationships, alignment, behaviour and performance.</p>
-        </div>
-        <div class="way-card">
+          <p>One-to-one thinking partnerships with senior leaders navigating responsibility, visibility, transition and complexity.</p>
+          <span class="way-link">Explore Executive Coaching →</span>
+        </a>
+        <a class="way-card" href="team-coaching.html">
+          <h3>Leadership Team Coaching</h3>
+          <p>Sustained work with leadership teams around relationships, collective purpose, recurring patterns, decision-making and how the team leads together.</p>
+          <span class="way-link">Explore Leadership Team Coaching →</span>
+        </a>
+        <a class="way-card" href="facilitation.html">
+          <h3>Leadership Facilitation and Workshops</h3>
+          <p>Focused sessions and bespoke experiences that help leadership groups think, decide, communicate and work through important challenges.</p>
+          <span class="way-link">Explore Leadership Facilitation →</span>
+        </a>
+        <a class="way-card" href="enneagram.html">
           <h3>Enneagram for Leaders</h3>
-          <p>Individual iEQ9 profiling combined with executive coaching.</p>
-        </div>
-        <div class="way-card">
+          <p>Individual iEQ9 profiling combined with coaching and facilitated reflection on motivation, communication, pressure and leadership patterns.</p>
+          <span class="way-link">Explore Enneagram for Leaders →</span>
+        </a>
+        <a class="way-card" href="enneagram.html">
           <h3>Enneagram for Teams</h3>
-          <p>Individual profiles, one-to-one debriefs, team mapping and facilitated team development.</p>
-        </div>
-        <div class="way-card">
-          <h3>Leadership Workshops &amp; Masterclasses</h3>
-          <p>High-impact sessions designed around the particular challenges facing your organisation.</p>
-        </div>
-        <div class="way-card">
+          <p>Individual profiles, one-to-one debriefs, team mapping and facilitated development focused on what happens when different patterns meet.</p>
+          <span class="way-link">Explore Enneagram for Teams →</span>
+        </a>
+        <a class="way-card" href="facilitation.html">
           <h3>Leadership Programmes</h3>
           <p>Multi-session development journeys combining facilitation, coaching, experimentation and reflection.</p>
-        </div>
-        <div class="way-card way-card-wide">
-          <h3>Speaking &amp; Keynotes</h3>
-          <p>Provocative, engaging conversations about leadership, change, narrative, identity and what it means to lead human beings.</p>
-        </div>
+          <span class="way-link">Explore Leadership Programmes →</span>
+        </a>
+        <a class="way-card way-card-wide" href="experience.html">
+          <h3>Speaking and Keynotes</h3>
+          <p>Provocative and engaging conversations about leadership, change, narrative, identity and what it means to lead human beings.</p>
+          <span class="way-link">Explore Robert's Experience →</span>
+        </a>
       </div>
     </div>
   </section>
@@ -294,7 +311,7 @@
     <div class="wrap">
       <h2>Not sure which is right?</h2>
       <div class="body-copy">
-        <p>You don't need to arrive with a polished brief or know whether you need coaching, facilitation, team development or Enneagram work. Tell me what is happening, what has changed, what feels difficult, what you'd like to be different.</p>
+        <p>You don't need to arrive with a polished brief or know whether you need executive coaching, team coaching, facilitation or Enneagram work. Tell me what is happening, what has changed, what feels difficult, what you'd like to be different.</p>
         <p>Our first conversation is an opportunity to understand the situation and establish whether there's a good fit, with no expectation that you commit before we've spoken.</p>
       </div>
       <p class="see-all"><a href="questions.html">Browse straightforward answers to common questions →</a></p>

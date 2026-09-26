@@ -289,6 +289,41 @@
     margin-top:46px; font-size:1.1rem; color:var(--body-text); max-width:42ch;
   }
 
+  /* WHERE MIGHT WE BEGIN — SITUATION PATHWAYS */
+  .pathway-grid{
+    margin-top:56px; display:grid; grid-template-columns:repeat(2, 1fr); gap:20px;
+  }
+  .pathway-card{
+    display:flex; flex-direction:column; gap:14px;
+    background:var(--parchment); border:1px solid var(--line-on-light); border-radius:2px;
+    padding:32px 30px; text-decoration:none; color:inherit;
+    transition:border-color .2s ease, background .2s ease;
+  }
+  .pathway-card:hover, .pathway-card:focus-visible{border-color:var(--gold); background:var(--parchment-2);}
+  .pathway-q{
+    font-family:'Fraunces', serif; font-style:italic; font-size:1.15rem; color:var(--ink); line-height:1.4;
+  }
+  .pathway-desc{font-size:0.95rem; color:var(--muted); max-width:44ch;}
+  .pathway-link{
+    margin-top:auto; padding-top:14px; border-top:1px solid var(--line-on-light);
+    font-family:'IBM Plex Mono', monospace; font-size:0.76rem; letter-spacing:0.02em; text-transform:uppercase;
+    color:var(--ink);
+  }
+  .pathway-card:hover .pathway-link{color:var(--gold);}
+  @media (max-width: 780px){ .pathway-grid{grid-template-columns:1fr;} }
+
+  /* THE WORK IN PRACTICE — EVIDENCE */
+  .evidence-grid{margin-top:56px; display:grid; grid-template-columns:repeat(3, 1fr); gap:1px; background:var(--line-on-light); border:1px solid var(--line-on-light);}
+  .evidence-card{background:var(--parchment); padding:34px 30px; display:flex; flex-direction:column; gap:14px; text-decoration:none; color:inherit; transition:background .2s ease;}
+  .evidence-card:hover{background:var(--parchment-2);}
+  .evidence-card h3{font-size:1.1rem; font-weight:500;}
+  .evidence-card .evidence-situation{font-size:0.95rem; color:var(--muted);}
+  .evidence-card .evidence-label{font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold); margin-top:4px;}
+  .evidence-card .evidence-detail{font-size:0.92rem; color:var(--muted);}
+  .evidence-card .evidence-link{margin-top:auto; padding-top:10px; font-family:'IBM Plex Mono', monospace; font-size:0.74rem; letter-spacing:0.02em; text-transform:uppercase; color:var(--ink);}
+  .evidence-card:hover .evidence-link{color:var(--gold);}
+  @media (max-width: 880px){ .evidence-grid{grid-template-columns:1fr;} }
+
   /* PRACTICE INTRO */
   .practice-intro{max-width:60ch;}
   .practice-intro h2{font-size:clamp(1.8rem, 3vw, 2.3rem); font-weight:400;}
@@ -629,6 +664,39 @@
     </div>
   </section>
 
+  <!-- WHERE MIGHT WE BEGIN -->
+  <section class="on-parchment-2 reveal" id="where-to-begin">
+    <div class="wrap">
+      <div class="practice-intro">
+        <p class="eyebrow">Where might we begin?</p>
+        <h2>What is happening right now?</h2>
+        <p>You may already know what kind of support you need. Or you may simply know that something needs to change. Begin with the situation that feels closest to yours.</p>
+      </div>
+      <div class="pathway-grid">
+        <a class="pathway-card" href="coaching.html">
+          <p class="pathway-q">&ldquo;I'm carrying a bigger role and need somewhere to think.&rdquo;</p>
+          <p class="pathway-desc">For senior leaders navigating responsibility, visibility, transition, pressure or complexity.</p>
+          <span class="pathway-link">Explore Executive Coaching →</span>
+        </a>
+        <a class="pathway-card" href="team-coaching.html">
+          <p class="pathway-q">&ldquo;Our leadership team needs to work differently together.&rdquo;</p>
+          <p class="pathway-desc">For teams seeking stronger relationships, clearer collective purpose and more effective ways of thinking, deciding and leading together.</p>
+          <span class="pathway-link">Explore Leadership Team Coaching →</span>
+        </a>
+        <a class="pathway-card" href="facilitation.html">
+          <p class="pathway-q">&ldquo;We need to hold an important or difficult conversation.&rdquo;</p>
+          <p class="pathway-desc">For leadership groups that need to make progress on a particular decision, challenge, strategy or conversation.</p>
+          <span class="pathway-link">Explore Leadership Facilitation →</span>
+        </a>
+        <a class="pathway-card" href="enneagram.html">
+          <p class="pathway-q">&ldquo;We want to understand the patterns shaping our leadership.&rdquo;</p>
+          <p class="pathway-desc">For leaders and teams who want a deeper understanding of motivation, communication, conflict, pressure and recurring behaviour.</p>
+          <span class="pathway-link">Explore Enneagram Work →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- PRACTICE INTRO + OFFERINGS -->
   <section class="on-parchment-2 reveal">
     <div class="wrap">
@@ -722,6 +790,53 @@
     </div>
   </section>
 
+  <!--
+    DRAFT — NOT PUBLISHED. Pending Robert's review and approval.
+    "THE WORK IN PRACTICE" evidence section, requested in the September 2026 refinement brief (item 7).
+    The three situations below are placeholder copy only — no real clients, outcomes or confidential
+    details have been used. Do not publish until Robert has either supplied verified, approved case
+    material, or confirmed this generic version may go live as-is. Once approved, move this block out
+    of the comment and place it here, between the four offerings and the "Radical support" section.
+
+  <section class="on-parchment reveal">
+    <div class="wrap">
+      <div class="practice-intro">
+        <p class="eyebrow">The work in practice</p>
+        <h2>Different situations. Work shaped around what matters.</h2>
+      </div>
+      <div class="evidence-grid">
+        <a class="evidence-card" href="coaching.html">
+          <h3>Senior leader in transition</h3>
+          <p class="evidence-situation">A senior leader stepping into a more visible role needed space to examine their impact, strengthen key relationships and become more deliberate about how they led under pressure.</p>
+          <p class="evidence-label">The work</p>
+          <p class="evidence-detail">Executive coaching focused on identity, influence, decision-making and the transition from functional expertise to broader organisational leadership.</p>
+          <p class="evidence-label">What became possible</p>
+          <p class="evidence-detail">Greater clarity, more intentional communication and increased confidence in occupying the new role.</p>
+          <span class="evidence-link">Explore Executive Coaching →</span>
+        </a>
+        <a class="evidence-card" href="team-coaching.html">
+          <h3>Leadership team seeking greater coherence</h3>
+          <p class="evidence-situation">A capable leadership team was working hard but operating largely through individual functions. Important decisions were repeatedly reopened and difficult conversations remained unresolved.</p>
+          <p class="evidence-label">The work</p>
+          <p class="evidence-detail">A sustained team-coaching engagement combining discovery conversations, observation, facilitated team sessions and practical experiments in decision-making and collective accountability.</p>
+          <p class="evidence-label">What became possible</p>
+          <p class="evidence-detail">More direct conversations, clearer collective responsibility and a stronger ability to recognise and change recurring patterns.</p>
+          <span class="evidence-link">Explore Leadership Team Coaching →</span>
+        </a>
+        <a class="evidence-card" href="facilitation.html">
+          <h3>An important room</h3>
+          <p class="evidence-situation">An organisation needed senior leaders to engage honestly with a significant challenge rather than move too quickly towards comfortable answers.</p>
+          <p class="evidence-label">The work</p>
+          <p class="evidence-detail">A bespoke facilitated experience designed around participation, challenge, reflection and the conversations the organisation most needed to have.</p>
+          <p class="evidence-label">What became possible</p>
+          <p class="evidence-detail">Greater engagement, more useful dialogue and clearer ownership of what needed to happen next.</p>
+          <span class="evidence-link">Explore Leadership Facilitation →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  END DRAFT -->
 
   <!-- SCRIPT / EXPECT -->
   <section class="on-ink reveal">

@@ -34,6 +34,8 @@
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
+  [id]{scroll-margin-top:96px;}
+  :focus-visible{outline:2px solid var(--gold-bright); outline-offset:3px;}
   body{margin:0; background:var(--parchment); color:var(--body-text); font-family:'Work Sans', sans-serif; font-weight:300; line-height:1.7;}
   .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
   img{max-width:100%; display:block;}
@@ -98,6 +100,34 @@
   .breadcrumb a{color:var(--ink-text-dim); text-decoration:none; border-bottom:1px solid var(--line-on-dark);}
   .breadcrumb a:hover{color:var(--gold-bright);}
 
+  /* JUMP NAV */
+  .jump-nav{background:var(--parchment-2); border-bottom:1px solid var(--line-on-light); padding:28px 0;}
+  .jump-nav .label{
+    font-family:'IBM Plex Mono', monospace; font-size:0.74rem; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:14px;
+  }
+  .jump-links{display:flex; flex-wrap:wrap; gap:10px 12px; margin:0; padding:0; list-style:none;}
+  .jump-links a{
+    font-family:'IBM Plex Mono', monospace; font-size:0.76rem; letter-spacing:0.01em;
+    color:var(--body-text); text-decoration:none; border:1px solid var(--line-on-light);
+    padding:9px 16px; border-radius:20px; white-space:nowrap; display:inline-block;
+    transition:border-color .2s ease, color .2s ease, background .2s ease;
+  }
+  .jump-links a:hover, .jump-links a:focus-visible{border-color:var(--gold); color:var(--ink); background:var(--parchment);}
+
+  /* MID-ENGAGEMENT CTA */
+  .mid-cta{
+    border:1px solid var(--line-on-light); border-radius:2px; padding:52px 48px;
+    text-align:center; max-width:760px; margin:0 auto;
+  }
+  .mid-cta h2{font-size:clamp(1.4rem,2.6vw,1.8rem); margin-bottom:18px;}
+  .mid-cta p{
+    font-family:'Fraunces', serif; font-style:italic; font-size:1.05rem; color:var(--muted);
+    max-width:56ch; margin:0 auto 28px;
+  }
+  .mid-cta .cta-row{justify-content:center; margin-top:0;}
+  @media (max-width: 600px){ .mid-cta{padding:40px 26px;} }
+
   .hero{background:var(--ink); color:var(--ink-text); padding:64px 0 88px;}
   .hero-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:64px; align-items:start;}
   .eyebrow{font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold); display:flex; align-items:center; gap:10px; margin-bottom:18px;}
@@ -109,6 +139,7 @@
   @media (max-width: 880px){ .hero-grid{grid-template-columns:1fr; gap:40px;} .hero-image{max-width:340px;} }
 
   section{padding:80px 0;}
+  section.tight-mid-cta{padding:56px 0;}
   section.alt{background:var(--parchment-2);}
   section.dark{background:var(--ink); color:var(--ink-text);}
   section.dark h2{color:var(--ink-text);}
@@ -255,6 +286,20 @@
     </div>
   </section>
 
+  <nav class="jump-nav" aria-label="Jump to a section on this page">
+    <div class="wrap">
+      <div class="label">Explore team coaching</div>
+      <ul class="jump-links">
+        <li><a href="#when-team-coaching-helps">Is team coaching right for us?</a></li>
+        <li><a href="#team-coaching-engagement">How the engagement works</a></li>
+        <li><a href="#team-coaching-or-facilitation">Team coaching or facilitation?</a></li>
+        <li><a href="#team-coaching-outcomes">What might change?</a></li>
+        <li><a href="#team-coaching-experience">Robert's experience</a></li>
+        <li><a href="#team-coaching-contact">Start a conversation</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <section>
     <div class="wrap">
       <div class="eyebrow">More than a collection of individuals</div>
@@ -285,7 +330,7 @@
     </div>
   </section>
 
-  <section class="alt">
+  <section class="alt" id="when-team-coaching-helps">
     <div class="wrap">
       <div class="eyebrow">Why now?</div>
       <h2>Teams usually seek support at moments that matter.</h2>
@@ -309,6 +354,19 @@
     </div>
   </section>
 
+  <section class="tight-mid-cta">
+    <div class="wrap">
+      <div class="mid-cta">
+        <h2>Recognise your team here?</h2>
+        <p>You do not need to diagnose the team or arrive with a polished brief. Tell me what is happening, what keeps repeating and what you would like to be different. We can explore whether team coaching, facilitation or another form of support would be the most useful starting point.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a 20-minute conversation →</a>
+          <a class="cta-secondary" href="mailto:robert@robertstephensoncoaching.com?subject=Leadership%20Team%20Coaching">or email me about your leadership team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section>
     <div class="wrap">
       <div class="eyebrow">A different kind of work</div>
@@ -322,7 +380,7 @@
     </div>
   </section>
 
-  <section class="alt">
+  <section class="alt" id="team-coaching-engagement">
     <div class="wrap">
       <div class="eyebrow">The engagement</div>
       <h2>We begin with the real work of the team.</h2>
@@ -438,7 +496,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="team-coaching-or-facilitation">
     <div class="wrap">
       <h2>Does your team need facilitation or team coaching?</h2>
       <div class="subgrid">
@@ -468,7 +526,7 @@
     </div>
   </section>
 
-  <section class="alt">
+  <section class="alt" id="team-coaching-outcomes">
     <div class="wrap">
       <div class="eyebrow">What might change?</div>
       <h2>Greater awareness should create greater collective choice.</h2>
@@ -491,7 +549,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="team-coaching-experience">
     <div class="wrap">
       <div class="eyebrow">Experience in the room</div>
       <h2>Work grounded in real leadership settings.</h2>
@@ -509,10 +567,30 @@
           <p class="attrib"><strong>Graeme Young</strong>Head of People Service Delivery, Heathrow</p>
         </div>
       </div>
+
+      <!--
+        DRAFT — NOT PUBLISHED. Pending Robert's review and approval.
+        Space reserved for team-coaching-specific evidence (refinement brief, item 8): a verified
+        team-coaching testimonial, or an anonymised case example using the structure below. The
+        Graeme Young quote above speaks to Robert's connection and delivery generally, not
+        specifically to a sustained team-coaching engagement, so do not treat it as sufficient
+        evidence for this page long-term. Do not invent a quotation or case detail.
+
+      <div class="case-study" style="margin-top:44px; border:1px solid rgba(42,41,36,0.15); border-radius:2px; padding:40px;">
+        <h3>The situation</h3>
+        <p>[What was happening in the team, and why support was sought.]</p>
+        <h3>The work</h3>
+        <p>[How the engagement was designed and what Robert did.]</p>
+        <h3>What changed</h3>
+        <p>[What the team, team leader or sponsor observed as a result.]</p>
+      </div>
+
+      END DRAFT -->
+
     </div>
   </section>
 
-  <section class="closing">
+  <section class="closing" id="team-coaching-contact">
     <div class="wrap">
       <div class="closing-grid">
         <div>

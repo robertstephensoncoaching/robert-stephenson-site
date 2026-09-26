@@ -55,6 +55,7 @@
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth; scroll-padding-top:88px;}
   [id]{scroll-margin-top:88px;}
+  :focus-visible{outline:2px solid var(--gold-bright); outline-offset:3px;}
   body{
     margin:0; background:var(--parchment); color:var(--body-text);
     font-family:'Work Sans', sans-serif; font-weight:300; line-height:1.7;
@@ -225,6 +226,10 @@
   }
   .still-card a:hover{color:var(--gold);}
   @media (max-width: 880px){ .still-grid{grid-template-columns:1fr; gap:20px;} }
+  .still-grid-4{grid-template-columns:repeat(4,1fr);}
+  .still-intro{font-family:'Fraunces', serif; font-style:italic; font-size:1.05rem; color:var(--ink-text-dim); max-width:62ch; margin:0 0 40px;}
+  @media (max-width: 980px){ .still-grid-4{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width: 600px){ .still-grid-4{grid-template-columns:1fr;} }
 
   /* CLOSING */
   .closing{background:var(--parchment-2); text-align:center; padding:96px 0;}
@@ -305,7 +310,7 @@
     <div class="wrap">
       <div class="body-copy">
         <p>You may know that something needs to change without yet knowing what kind of support would be most useful. You might be stepping into a bigger role, navigating pressure or complexity, trying to change how a leadership team works, or looking for someone capable of holding an important room.</p>
-        <p>These are answers to the questions senior leaders, HR professionals, organisational sponsors and leadership teams commonly ask me. They are not intended to persuade you that coaching, facilitation or the Enneagram is always the answer. Sometimes it is. Sometimes something else is needed.</p>
+        <p>These are answers to the questions senior leaders, HR professionals, organisational sponsors and leadership teams commonly ask me. They are not intended to persuade you that executive coaching, team coaching, facilitation or the Enneagram is always the answer. Sometimes it is. Sometimes something else is needed.</p>
         <p class="prompt-q">The first task is to understand what is actually happening.</p>
       </div>
     </div>
@@ -718,23 +723,33 @@
 
   <section class="still-deciding reveal">
     <div class="wrap">
-      <h2>Still deciding what kind of support you need?</h2>
-      <div class="still-grid">
+      <h2>Not sure what kind of support would be most useful?</h2>
+      <p class="still-intro">Tell me what is happening, who the work is for and what you would like to be different. We can explore whether executive coaching, team coaching, facilitation, Enneagram work or something else would be the most useful starting point.</p>
+      <div class="still-grid still-grid-4">
         <div class="still-card">
-          <h3>Executive coaching</h3>
+          <h3>Executive Coaching</h3>
           <p>A confidential thinking partnership for senior leaders navigating responsibility, visibility, transition and complexity.</p>
           <a href="coaching.html">Explore Executive Coaching →</a>
         </div>
         <div class="still-card">
-          <h3>Leadership teams and facilitation</h3>
-          <p>Bespoke work for leadership teams that need to think, decide, communicate or work differently together.</p>
+          <h3>Leadership Team Coaching</h3>
+          <p>Sustained work with a leadership team as a collective, focused on relationships, recurring patterns, collective responsibility and how the team leads together.</p>
+          <a href="team-coaching.html">Explore Leadership Team Coaching →</a>
+        </div>
+        <div class="still-card">
+          <h3>Leadership Facilitation</h3>
+          <p>Focused support for leadership groups that need to hold an important conversation, reach a decision, develop a strategy or make progress on a defined challenge.</p>
           <a href="facilitation.html">Explore Leadership Facilitation →</a>
         </div>
         <div class="still-card">
-          <h3>Enneagram for leaders and teams</h3>
-          <p>Professional iEQ9 assessment and facilitated development focused on motivation, communication, pressure and collective patterns.</p>
+          <h3>Enneagram for Leaders and Teams</h3>
+          <p>Professional iEQ9 assessment and facilitated development focused on motivation, communication, pressure and individual and collective patterns.</p>
           <a href="enneagram.html">Explore Enneagram Work →</a>
         </div>
+      </div>
+      <div class="cta-row" style="justify-content:center;">
+        <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a 20-minute conversation →</a>
+        <a class="cta-secondary" href="mailto:robert@robertstephensoncoaching.com?subject=Starting%20a%20conversation" style="color:var(--ink-text-dim);">or send me a message</a>
       </div>
     </div>
   </section>

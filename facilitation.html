@@ -116,8 +116,10 @@
   .prompt-q{font-family:'Fraunces', serif; font-style:italic; font-size:1.15rem; color:var(--ink); margin:28px 0; padding-left:18px; border-left:2px solid var(--gold); max-width:56ch;}
   section.dark .prompt-q{color:var(--ink-text);}
 
-  .tag-row{display:flex; flex-wrap:wrap; gap:10px 14px; margin:32px 0;}
-  .tag-row span{font-family:'IBM Plex Mono', monospace; font-size:0.76rem; letter-spacing:0.02em; color:var(--muted); border:1px solid var(--line-on-light); padding:8px 14px; border-radius:20px;}
+  .tag-row{display:flex; flex-wrap:wrap; gap:10px 22px; margin:32px 0; font-family:'IBM Plex Mono', monospace; font-size:0.76rem; color:var(--muted); letter-spacing:0.02em;}
+  .tag-row span{white-space:nowrap;}
+  .tag-row span::after{content:"·"; margin-left:22px; color:var(--gold);}
+  .tag-row span:last-child::after{content:"";}
 
   .shift-list{margin-top:28px; max-width:66ch;}
   .shift-list .shift-label{font-family:'IBM Plex Mono', monospace; font-size:0.76rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:8px;}

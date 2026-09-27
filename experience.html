@@ -167,6 +167,13 @@
   .btn-primary:hover{background:var(--gold-bright); border-color:var(--gold-bright); transform:translateY(-1px);}
   .cta-secondary{font-family:'IBM Plex Mono', monospace; font-size:0.82rem; color:var(--muted); text-decoration:underline; text-underline-offset:3px;}
   .cta-secondary:hover{color:var(--gold);}
+  .listen-link{margin-top:20px;}
+  .listen-link a{
+    font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.02em;
+    color:var(--muted); text-decoration:none; border-bottom:1px solid var(--line-on-light);
+    padding-bottom:2px; transition:color .2s ease, border-color .2s ease;
+  }
+  .listen-link a:hover{color:var(--gold); border-color:var(--gold);}
   section.dark .cta-secondary{color:var(--ink-text-dim);}
   .hero .cta-secondary{color:var(--ink-text-dim);}
 
@@ -299,6 +306,7 @@
             <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a 20-minute chat →</a>
             <a class="cta-secondary" href="ways-of-working.html">Explore how I work</a>
           </div>
+          <p class="listen-link"><a href="#hear-me-talk">Prefer to listen first? Hear a few conversations ↓</a></p>
         </div>
         <div class="hero-image">
           <img src="person-behind-leader.jpg" alt="Full-length portrait of Robert Stephenson smiling in a restaurant setting" loading="eager">
@@ -466,7 +474,7 @@
     </div>
   </section>
 
-  <section class="alt">
+  <section class="alt" id="hear-me-talk">
     <div class="wrap">
       <div class="eyebrow">Hear me talk</div>
       <h2>Conversations, not just copy.</h2>

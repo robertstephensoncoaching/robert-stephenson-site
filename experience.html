@@ -197,6 +197,29 @@
   .testi-card .attrib{font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--ink-text-dim);}
   .testi-card .attrib strong{display:block; color:var(--ink-text); font-family:'Work Sans', sans-serif; font-weight:500; font-size:0.92rem; margin-bottom:2px;}
 
+  .media-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:28px; margin-top:8px;}
+  .media-card{display:flex; flex-direction:column; text-decoration:none; color:inherit; border:1px solid var(--line-on-light); border-radius:2px; overflow:hidden; background:var(--parchment); transition:border-color .2s ease;}
+  .media-card:hover{border-color:var(--gold);}
+  .media-thumb{position:relative; aspect-ratio:16/9; background:var(--ink) center/cover no-repeat; overflow:hidden;}
+  .media-thumb img{width:100%; height:100%; object-fit:cover; display:block;}
+  .media-play{position:absolute; inset:0; display:flex; align-items:center; justify-content:center;}
+  .media-play::before{content:""; width:52px; height:52px; border-radius:50%; background:rgba(21,20,17,0.55); position:absolute;}
+  .media-play::after{content:""; position:relative; width:0; height:0; border-top:10px solid transparent; border-bottom:10px solid transparent; border-left:16px solid var(--parchment); margin-left:4px;}
+  .media-body{padding:20px 22px 22px;}
+  .media-source{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:8px;}
+  .media-body h3{font-family:'Fraunces', serif; font-weight:500; font-size:1.08rem; margin:0 0 8px; color:var(--ink);}
+  .media-body p{font-size:0.92rem; color:var(--muted); margin:0;}
+  .media-card.no-thumb .media-body{padding:22px;}
+  .more-talks{margin-top:36px; border-top:1px solid var(--line-on-light); padding-top:24px;}
+  .more-talks-label{font-family:'IBM Plex Mono', monospace; font-size:0.76rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:16px;}
+  .more-talks-list{list-style:none; margin:0; padding:0; display:grid; gap:4px;}
+  .more-talks-list li{border-top:1px solid var(--line-on-light);}
+  .more-talks-list li:first-child{border-top:none;}
+  .more-talks-list a{display:flex; flex-wrap:wrap; align-items:baseline; gap:0 10px; padding:14px 0; text-decoration:none; color:var(--ink);}
+  .more-talks-list a:hover .talk-title{color:var(--gold-bright);}
+  .more-talks-list .talk-title{font-family:'Fraunces', serif; font-style:italic; font-size:1rem; transition:color .2s ease;}
+  .more-talks-list .talk-source{font-family:'IBM Plex Mono', monospace; font-size:0.74rem; color:var(--muted);}
+
   .closing{background:var(--ink); color:var(--ink-text); text-align:center; padding:88px 0;}
   .closing h2{color:var(--ink-text); font-size:clamp(1.6rem,3vw,2.1rem);}
   .closing p{font-family:'Fraunces', serif; font-style:italic; font-size:1.1rem; color:var(--ink-text-dim); max-width:52ch; margin:0 auto 32px;}
@@ -438,6 +461,54 @@
       <p style="color:var(--ink-text-dim); max-width:66ch; margin-top:18px;">These ideas also inform my writing and the longer body of work I am developing around <em style="color:var(--ink-text); font-style:italic;">The Self Who Leads</em>.</p>
       <div class="cta-row">
         <a class="cta-secondary" href="mailto:robert@robertstephensoncoaching.com?subject=Speaking%20enquiry" style="color:var(--ink-text-dim);">Talk to me about a speaking engagement</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="eyebrow">Hear me talk</div>
+      <h2>Conversations, not just copy.</h2>
+      <p class="body-copy" style="max-width:66ch;">If you'd rather hear how I think than read about it, these are a few conversations from podcasts and events over the years.</p>
+      <div class="media-grid">
+        <a class="media-card" href="https://www.youtube.com/watch?v=NL2YCGf3oXg" target="_blank" rel="noopener">
+          <div class="media-thumb">
+            <img src="https://i.ytimg.com/vi/NL2YCGf3oXg/hqdefault.jpg" alt="Robert Stephenson on the Optimus podcast, discussing the missing piece in leadership" loading="lazy">
+            <span class="media-play"></span>
+          </div>
+          <div class="media-body">
+            <span class="media-source">Optimus</span>
+            <h3>The Missing Piece in Leadership</h3>
+            <p>No elite athlete wins alone, so why do so many leaders try to? A conversation on why leaders are quick to offer support to others and slow to ask for it themselves.</p>
+          </div>
+        </a>
+        <a class="media-card" href="https://youtu.be/y-D4nCPGMgs" target="_blank" rel="noopener">
+          <div class="media-thumb">
+            <img src="https://i.ytimg.com/vi/y-D4nCPGMgs/hqdefault.jpg" alt="Robert Stephenson on The Coach's Journey podcast with Robbie Swale" loading="lazy">
+            <span class="media-play"></span>
+          </div>
+          <div class="media-body">
+            <span class="media-source">The Coach's Journey · Ep. 27</span>
+            <h3>How to Say Yes and Become a Conduit for Change</h3>
+            <p>With host Robbie Swale, on the path from actor to narrative coach to director of one of Europe's largest coaching schools, and what saying yes to opportunity has taught me.</p>
+          </div>
+        </a>
+        <a class="media-card no-thumb" href="https://wonderdome.substack.com/p/72-the-theater-of-our-lives-with-938" target="_blank" rel="noopener">
+          <div class="media-body">
+            <span class="media-source">The Wonder Dome</span>
+            <h3>The Theater of Our Lives</h3>
+            <p>On my background in acting and mime, and the idea that we are all, in a sense, operating in a theatre of our own minds.</p>
+          </div>
+        </a>
+      </div>
+      <div class="more-talks">
+        <span class="more-talks-label">A few more, if you're curious</span>
+        <ul class="more-talks-list">
+          <li><a href="https://www.coachesrising.com/podcast/cross-disciplinary-approaches-in-narrative-coaching-with-robert-stephenson/" target="_blank" rel="noopener"><span class="talk-title">Cross-disciplinary Approaches in Narrative Coaching</span><span class="talk-source">Coaches Rising</span></a></li>
+          <li><a href="https://thecoachinginn.podbean.com/e/in-conversation-with-robert-stephenson-coaching-young-people-and-more/" target="_blank" rel="noopener"><span class="talk-title">Coaching Young People, and More</span><span class="talk-source">The Coaching Inn, with Claire Pedrick MCC</span></a></li>
+          <li><a href="https://www.podbean.com/ew/pb-gv96x-1418800" target="_blank" rel="noopener"><span class="talk-title">Stepping Out of the Concrete Jungle</span><span class="talk-source">The Coaching Inn, with Claire Pedrick MCC</span></a></li>
+          <li><a href="https://youtu.be/LvY3pilMqjc" target="_blank" rel="noopener"><span class="talk-title">Prospering as a New Coach, with Steve Chandler</span><span class="talk-source">Coaching Uncaged (as host)</span></a></li>
+        </ul>
       </div>
     </div>
   </section>

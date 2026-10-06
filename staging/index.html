@@ -165,8 +165,8 @@
   .btn-primary{background:var(--gold); color:var(--ink); border:1px solid var(--gold);}
   .btn-primary:hover{background:var(--gold-bright); border-color:var(--gold-bright); transform:translateY(-1px);}
   .cta-row{margin-top:40px; display:flex; align-items:center; gap:22px; flex-wrap:wrap;}
-  .cta-secondary{font-family:'IBM Plex Mono', monospace; font-size:0.82rem; color:var(--ink-text-dim); text-decoration:underline; text-underline-offset:3px; transition:color .2s ease;}
-  .cta-secondary:hover{color:var(--gold-bright);}
+  .cta-secondary{font-family:'IBM Plex Mono', monospace; font-size:0.86rem; color:var(--ink-text); border-bottom:1px solid var(--line-on-dark); padding-bottom:3px; text-decoration:none; transition:color .2s ease, border-color .2s ease;}
+  .cta-secondary:hover{color:var(--gold-bright); border-color:var(--gold);}
   .cta-secondary.on-light{color:var(--muted);}
   .cta-secondary.on-light:hover{color:var(--gold);}
   .section-link{font-family:'Fraunces', serif; font-style:italic; color:var(--body-text); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:1px;}
@@ -176,34 +176,50 @@
   .hero{position:relative; background:var(--ink); color:var(--ink-text); padding:108px 0 96px; overflow:hidden;}
   .hero-grid{display:grid; grid-template-columns:1.2fr 0.8fr; gap:56px; align-items:center;}
   .hero h1{font-size:clamp(2.2rem, 4.2vw, 3.3rem); font-weight:400; color:var(--ink-text); max-width:16ch;}
-  .hero .lede{font-family:'Fraunces', serif; font-style:italic; font-weight:400; font-size:clamp(1.1rem, 1.7vw, 1.3rem); color:var(--ink-text-dim); margin-top:30px; max-width:46ch; line-height:1.55;}
+  .hero .lede{font-family:'Fraunces', serif; font-style:italic; font-weight:500; font-size:clamp(1.25rem, 2vw, 1.55rem); color:var(--ink-text); margin-top:30px; max-width:46ch; line-height:1.5;}
   .hero .body-text{margin-top:22px; font-size:1.02rem; color:var(--ink-text-dim); max-width:50ch; line-height:1.7;}
   .hero-image{border-radius:2px; overflow:hidden; background:var(--ink);}
   .hero-image img{width:100%; height:100%; object-fit:cover;}
   @media (max-width: 900px){ .hero-grid{grid-template-columns:1fr; gap:40px;} .hero-image{max-width:360px; margin:0 auto;} }
 
   /* ===== RECOGNITION ===== */
-  .recognition-head{max-width:46ch; margin-bottom:64px;}
-  .recognition-head h2{font-size:clamp(1.7rem, 3vw, 2.3rem);}
-  .recognition-list{border-top:1px solid var(--line-on-light);}
-  .recognition-item{
-    display:grid; grid-template-columns:72px 1fr; gap:28px;
-    padding:40px 0; border-bottom:1px solid var(--line-on-light);
+  .recognition-head{max-width:54ch; margin-bottom:64px;}
+  .recognition-head .eyebrow{margin-bottom:22px;}
+  .recognition-head h2{font-size:clamp(1.9rem, 3.4vw, 2.5rem); line-height:1.25;}
+  .recognition-grid{
+    display:grid; grid-template-columns:1fr 1fr; column-gap:64px;
+    border-top:1px solid var(--line-on-light);
   }
-  .recognition-num{font-family:'IBM Plex Mono', monospace; font-size:0.82rem; color:var(--gold); letter-spacing:0.04em; padding-top:6px;}
-  .recognition-statement{font-family:'Fraunces', serif; font-style:italic; font-size:clamp(1.15rem, 2vw, 1.4rem); color:var(--ink); max-width:26ch; line-height:1.4;}
-  .recognition-desc{color:var(--muted); font-size:1rem; max-width:52ch; margin-top:10px; line-height:1.65;}
-  @media (max-width: 760px){ .recognition-item{grid-template-columns:1fr; gap:10px;} .recognition-num{padding-top:0;} }
+  .recognition-item{padding:36px 0; border-bottom:1px solid var(--line-on-light);}
+  .recognition-item:nth-child(odd){padding-right:32px;}
+  .recognition-item:nth-child(even){padding-left:32px; border-left:1px solid var(--line-on-light);}
+  .recognition-statement{font-family:'Fraunces', serif; font-style:italic; font-size:clamp(1.1rem, 1.8vw, 1.3rem); color:var(--ink); max-width:28ch; line-height:1.4; margin:0;}
+  .recognition-desc{color:var(--muted); font-size:0.98rem; max-width:40ch; margin-top:10px; line-height:1.65;}
+  @media (max-width: 760px){
+    .recognition-grid{grid-template-columns:1fr;}
+    .recognition-item:nth-child(odd){padding-right:0;}
+    .recognition-item:nth-child(even){padding-left:0; border-left:none;}
+  }
 
   /* ===== CORE BELIEF ===== */
   .belief{text-align:center;}
   .belief-head{max-width:36ch; margin:0 auto;}
   .belief-head h2{font-size:clamp(1.9rem, 3.6vw, 2.7rem); color:var(--ink-text); line-height:1.25;}
   .belief-body{max-width:58ch; margin:34px auto 0; color:var(--ink-text-dim); font-size:1.04rem; line-height:1.75;}
-  .belief-flow{margin-top:76px; display:flex; flex-direction:column; align-items:center; gap:26px;}
-  .belief-row{font-family:'IBM Plex Mono', monospace; font-size:0.86rem; letter-spacing:0.03em; color:var(--gold-bright); display:flex; align-items:center; gap:16px;}
-  .belief-row .arrow{color:var(--gold); font-size:1rem;}
-  .belief-rule{width:1px; height:30px; background:var(--line-on-dark);}
+  .belief-progression{display:flex; align-items:flex-start; justify-content:center; gap:6px; margin-top:80px; flex-wrap:wrap;}
+  .belief-stage{width:180px;}
+  .belief-stage .stage-word{display:block; font-family:'IBM Plex Mono', monospace; font-size:0.9rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-bright); margin-bottom:14px;}
+  .belief-stage .stage-desc{font-family:'Fraunces', serif; font-style:italic; color:var(--ink-text-dim); font-size:0.98rem; line-height:1.5; margin:0;}
+  .flow-arrow{display:flex; align-items:flex-start; justify-content:center; color:var(--gold); font-size:1.1rem; width:28px; padding-top:3px;}
+  .arrow-v{display:none;}
+  .belief-subflow{margin-top:48px; font-family:'IBM Plex Mono', monospace; font-size:0.76rem; letter-spacing:0.05em; color:var(--ink-text-dim); opacity:0.75;}
+  @media (max-width: 760px){
+    .belief-progression{flex-direction:column; align-items:center; gap:22px;}
+    .belief-stage{width:240px;}
+    .flow-arrow{width:auto;}
+    .arrow-h{display:none;}
+    .arrow-v{display:inline;}
+  }
 
   /* ===== THREE WAYS ===== */
   .way{display:grid; grid-template-columns:0.9fr 1.1fr; gap:60px; align-items:center; padding:64px 0; border-bottom:1px solid var(--line-on-light);}
@@ -217,6 +233,11 @@
   .way h3{font-size:clamp(1.35rem, 2.4vw, 1.75rem); max-width:18ch;}
   .way p{margin-top:18px; color:var(--muted); font-size:1.01rem; max-width:50ch; line-height:1.7;}
   @media (max-width: 860px){ .way, .way:nth-of-type(even){grid-template-columns:1fr; gap:28px;} .way:nth-of-type(even) .way-media{order:0;} }
+
+  /* ===== MAJOR SECTION HEADS ===== */
+  .section-head-major{margin-bottom:64px;}
+  .section-head-major .section-rule{display:block; width:40px; height:1px; background:var(--gold); margin-bottom:22px;}
+  .section-head-major h2{font-size:clamp(1.8rem, 3.2vw, 2.4rem); max-width:18ch;}
 
   /* ===== STORY ===== */
   .story-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:64px; align-items:start;}
@@ -237,7 +258,7 @@
   .testi-card .attrib strong{display:block; color:var(--gold-bright); font-size:0.84rem; margin-bottom:3px; font-weight:500;}
   @media (max-width: 760px){ .testi-grid{grid-template-columns:1fr;} }
   .client-list{margin-top:56px; padding-top:40px; border-top:1px solid var(--line-on-dark);}
-  .client-list-label{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-text-dim); margin-bottom:18px;}
+  .client-list-label{font-family:'Work Sans', sans-serif; font-size:0.96rem; color:var(--ink-text-dim); margin-bottom:20px; max-width:56ch;}
   .client-cloud{display:flex; flex-wrap:wrap; gap:10px 28px; font-family:'IBM Plex Mono', monospace; font-size:0.86rem; color:var(--ink-text-dim);}
 
   /* ===== CLOSING ===== */
@@ -268,30 +289,26 @@
       <div class="nav-name">Robert Stephenson<span>Executive Coach<br>Master Facilitator</span></div>
     </a>
     <nav class="nav-links" aria-label="Page sections">
-      <a href="../coaching.html">Coaching</a>
-      <a href="../team-coaching.html">Team Coaching</a>
-      <a href="../facilitation.html">Facilitation</a>
+      <a href="index.html">Home</a>
       <a href="narrative-coaching.html" class="accent">Narrative Coaching</a>
-      <a href="../enneagram.html">Enneagram</a>
-      <a href="../experience.html">About Robert</a>
-      <a href="../questions.html">Questions</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../questions.html">Ideas</a>
+      <a href="../ways-of-working.html">Work With Me</a>
     </nav>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" onclick="toggleMobileMenu()"><span class="bar"></span></button>
-    <a class="nav-cta" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a chat</a>
+    <a class="nav-cta" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a Conversation</a>
   </div>
 </header>
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" type="button" aria-label="Close menu" onclick="toggleMobileMenu(false)">&times;</button>
   <nav aria-label="Mobile page navigation">
-    <a href="../coaching.html">Coaching</a>
-    <a href="../team-coaching.html">Team Coaching</a>
-    <a href="../facilitation.html">Facilitation</a>
+    <a href="index.html">Home</a>
     <a href="narrative-coaching.html">Narrative Coaching</a>
-    <a href="../enneagram.html">Enneagram</a>
-    <a href="../experience.html">About Robert</a>
-    <a href="../questions.html">Questions</a>
+    <a href="../experience.html">Experience</a>
+    <a href="../questions.html">Ideas</a>
+    <a href="../ways-of-working.html">Work With Me</a>
   </nav>
-  <a class="btn btn-primary mobile-cta" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a conversation →</a>
+  <a class="btn btn-primary mobile-cta" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a Conversation →</a>
 </div>
 
 <main id="main">
@@ -303,7 +320,7 @@
         <p class="eyebrow eyebrow-light">Executive coaching · Team coaching · Facilitation</p>
         <h1>The story that got you here may not be the story that takes you forward.</h1>
         <p class="lede">Leadership changes as the stakes rise.</p>
-        <p class="body-text">You may be stepping into greater responsibility, navigating change, facing a difficult decision, trying to shift something in your team — or simply sensing that the way you've been leading no longer quite fits.</p>
+        <p class="body-text">You may be stepping into greater responsibility, navigating change, facing a difficult decision or trying to shift something in your team. Or perhaps you're simply sensing that the way you've been leading no longer quite fits.</p>
         <p class="body-text">I work with senior leaders and teams to see what is really happening, uncover the stories and patterns shaping the present, and create new possibilities for what happens next.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a conversation →</a>
@@ -321,49 +338,32 @@
     <div class="wrap">
       <div class="recognition-head">
         <p class="eyebrow">Perhaps you're here because…</p>
+        <h2>Something has changed. Or needs to.</h2>
       </div>
-      <div class="recognition-list">
+      <div class="recognition-grid">
         <div class="recognition-item">
-          <span class="recognition-num">01</span>
-          <div>
-            <p class="recognition-statement">You've stepped into something bigger.</p>
-            <p class="recognition-desc">The responsibility, visibility or complexity has changed — and what worked before may not be enough for what comes next.</p>
-          </div>
+          <p class="recognition-statement">You've stepped into something bigger.</p>
+          <p class="recognition-desc">The responsibility, visibility or complexity has changed. What worked before may not be enough for what comes next.</p>
         </div>
         <div class="recognition-item">
-          <span class="recognition-num">02</span>
-          <div>
-            <p class="recognition-statement">The old way of leading isn't quite working anymore.</p>
-            <p class="recognition-desc">You can feel something needs to shift, even if you can't yet name what.</p>
-          </div>
+          <p class="recognition-statement">The old way of leading isn't quite working anymore.</p>
+          <p class="recognition-desc">You can feel something needs to shift, even if you can't yet name it.</p>
         </div>
         <div class="recognition-item">
-          <span class="recognition-num">03</span>
-          <div>
-            <p class="recognition-statement">You're carrying questions you can't easily explore elsewhere.</p>
-            <p class="recognition-desc">The more senior you become, the fewer places there are to speak without needing to manage the consequences.</p>
-          </div>
+          <p class="recognition-statement">You're carrying questions you can't easily explore elsewhere.</p>
+          <p class="recognition-desc">The more senior you become, the fewer places there are to think and speak completely openly.</p>
         </div>
         <div class="recognition-item">
-          <span class="recognition-num">04</span>
-          <div>
-            <p class="recognition-statement">Something in the team isn't working.</p>
-            <p class="recognition-desc">The capability is there, but patterns of trust, communication, accountability or relationship are getting in the way.</p>
-          </div>
+          <p class="recognition-statement">Something in the team isn't working.</p>
+          <p class="recognition-desc">The capability is there, but trust, communication or accountability is getting in the way.</p>
         </div>
         <div class="recognition-item">
-          <span class="recognition-num">05</span>
-          <div>
-            <p class="recognition-statement">You're facing a consequential moment.</p>
-            <p class="recognition-desc">Change. Promotion. Reorganisation. Conflict. A difficult decision. A new chapter.</p>
-          </div>
+          <p class="recognition-statement">You're facing a consequential moment.</p>
+          <p class="recognition-desc">Change. Promotion. Reorganisation. Conflict. A difficult decision. A new chapter.</p>
         </div>
         <div class="recognition-item">
-          <span class="recognition-num">06</span>
-          <div>
-            <p class="recognition-statement">You know there is more available.</p>
-            <p class="recognition-desc">More of you. More from the team. More possibility than the current story is allowing.</p>
-          </div>
+          <p class="recognition-statement">You know there is more available.</p>
+          <p class="recognition-desc">More of you. More from the team. More possibility than the current story is allowing.</p>
         </div>
       </div>
     </div>
@@ -374,24 +374,40 @@
     <div class="wrap">
       <div class="belief-head">
         <p class="eyebrow eyebrow-light" style="justify-content:center;">What I believe</p>
-        <h2>There is more richness in people than is usually visible — sometimes even to themselves.</h2>
+        <h2>There is more richness in people than is usually visible. Sometimes even to themselves.</h2>
       </div>
       <p class="belief-body">Leadership development isn't only about adding another skill, framework or technique. Sometimes the most important shift begins by seeing differently: noticing the story you are living inside, the role you have learned to play, the assumptions you no longer question and the possibilities that have disappeared from view. My work creates the space to bring some of that back into sight.</p>
-      <div class="belief-flow">
-        <p class="belief-row">From hidden <span class="arrow">→</span> expressed.</p>
-        <div class="belief-rule"></div>
-        <p class="belief-row">From story <span class="arrow">→</span> possibility.</p>
-        <div class="belief-rule"></div>
-        <p class="belief-row">From possibility <span class="arrow">→</span> action.</p>
+      <div class="belief-progression">
+        <div class="belief-stage">
+          <span class="stage-word">See</span>
+          <p class="stage-desc">What has been hidden.</p>
+        </div>
+        <div class="flow-arrow"><span class="arrow-h">→</span><span class="arrow-v">↓</span></div>
+        <div class="belief-stage">
+          <span class="stage-word">Question</span>
+          <p class="stage-desc">The story shaping what you see.</p>
+        </div>
+        <div class="flow-arrow"><span class="arrow-h">→</span><span class="arrow-v">↓</span></div>
+        <div class="belief-stage">
+          <span class="stage-word">Imagine</span>
+          <p class="stage-desc">What else might be possible.</p>
+        </div>
+        <div class="flow-arrow"><span class="arrow-h">→</span><span class="arrow-v">↓</span></div>
+        <div class="belief-stage">
+          <span class="stage-word">Choose</span>
+          <p class="stage-desc">What happens next.</p>
+        </div>
       </div>
+      <p class="belief-subflow">Hidden → Seen → Possible → Chosen</p>
     </div>
   </section>
 
   <!-- 4. THREE WAYS INTO THE WORK -->
   <section class="on-parchment-2">
     <div class="wrap">
-      <div class="recognition-head" style="margin-bottom:0;">
-        <p class="eyebrow">Three ways into the work</p>
+      <div class="section-head-major">
+        <span class="section-rule"></span>
+        <h2>Three ways into the work</h2>
       </div>
 
       <div class="way">
@@ -419,7 +435,7 @@
       </div>
 
       <div class="way">
-        <div class="way-media"><img src="../thoughtful-portrait.jpg" alt="Robert Stephenson, thoughtful portrait with hands clasped" loading="lazy"></div>
+        <div class="way-media"><img src="../thoughtful-portrait.jpg" alt="Robert Stephenson, thoughtful portrait with hands clasped" loading="lazy" style="object-position:50% 12%;"></div>
         <div>
           <p class="way-label">03 · The lens</p>
           <h3>We don't only live through events. We live through the stories we make of them.</h3>
@@ -458,8 +474,8 @@
   <!-- 6. EVIDENCE -->
   <section class="on-ink-2">
     <div class="wrap">
-      <p class="eyebrow eyebrow-light">What people experience</p>
-      <h2 style="color:var(--ink-text); font-size:clamp(1.5rem, 2.6vw, 2rem); max-width:22ch;">Warmth, challenge, and a meaningful shift.</h2>
+      <p class="eyebrow eyebrow-light">Client perspectives</p>
+      <h2 style="color:var(--ink-text); font-size:clamp(1.5rem, 2.6vw, 2rem); max-width:22ch;">What people experience.</h2>
       <div class="testi-grid">
         <div class="testi-card">
           <div><p class="mark">&ldquo;</p><p class="quote">Robert's coaching style, listening skills and curiosity took me to a new personal level. To understand how focussing on me and my personal goals would help me in my professional life was life changing.</p></div>
@@ -471,7 +487,7 @@
         </div>
       </div>
       <div class="client-list">
-        <p class="client-list-label">Direct client work and associate programmes connected to</p>
+        <p class="client-list-label">Across direct engagements and associate programmes, I've worked with leaders and teams from:</p>
         <div class="client-cloud">
           <span>Cormack Advertising</span><span>More Happi</span><span>Estée Lauder</span><span>NHS</span><span>Essex University</span><span>BT</span><span>Ford Motor Company</span><span>Skyscanner</span><span>Sony Music</span>
         </div>
@@ -490,7 +506,7 @@
       </div>
       <div class="closing-sig">
         <span class="name">Robert Stephenson PCC</span>
-        Executive Coach · Master Facilitator · Enneagram Practitioner
+        Leadership · Teams · Narrative
       </div>
     </div>
   </section>
@@ -502,9 +518,11 @@
     <span>© <span id="year"></span> Robert Stephenson — staging preview</span>
     <div class="footer-right">
       <a href="mailto:robert@robertstephensoncoaching.com">robert@robertstephensoncoaching.com</a>
-      <a href="../ways-of-working.html">Ways of Working</a>
-      <a href="../experience.html">About Robert</a>
-      <a href="../privacy.html">Privacy Policy</a>
+      <a href="narrative-coaching.html">Narrative Coaching</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../questions.html">Ideas</a>
+      <a href="../ways-of-working.html">Work With Me</a>
+      <a href="../privacy.html">Privacy</a>
     </div>
   </div>
 </footer>

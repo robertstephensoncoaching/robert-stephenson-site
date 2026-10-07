@@ -1,0 +1,8 @@
+# Permanent replacements; Cloudflare Pages handles normal .html URLs itself.
+/facilitation /team-coaching 301
+/facilitation.html /team-coaching 301
+/facilitation/ /team-coaching 301
+/team-coaching_1.html /team-coaching 301
+/team-coaching_1 /team-coaching 301
+/questions_1.html /questions 301
+/questions_1 /questions 301

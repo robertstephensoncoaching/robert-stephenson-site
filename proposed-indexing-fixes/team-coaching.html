@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teams & Facilitation · Robert Stephenson</title>
+<meta name="description" content="Leadership team coaching and facilitation with Robert Stephenson PCC. Helping leadership teams work with what is actually happening between them. Available internationally.">
+<link rel="canonical" href="https://robertstephensoncoaching.com/team-coaching">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://robertstephensoncoaching.com/team-coaching">
+<meta property="og:title" content="Teams & Facilitation · Robert Stephenson">
+<meta property="og:description" content="Leadership team coaching and facilitation with Robert Stephenson PCC. Helping leadership teams work with what is actually happening between them. Available internationally.">
+<meta property="og:image" content="https://robertstephensoncoaching.com/programme-group.jpg">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://robertstephensoncoaching.com/"},{"@type":"ListItem","position":2,"name":"Teams & Facilitation","item":"https://robertstephensoncoaching.com/team-coaching"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Leadership Team Coaching and Facilitation","provider":{"@type":"ProfessionalService","name":"Robert Stephenson Coaching"},"areaServed":"United Kingdom","url":"https://robertstephensoncoaching.com/team-coaching"}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink: #14171B;
+    --ink-2: #1C2025;
+    --ink-3: #23272D;
+    --parchment: #EDEAE0;
+    --parchment-2: #E2DECF;
+    --ink-text: #EEEAE0;
+    --ink-text-dim: #A9A79E;
+    --body-text: #2A2924;
+    --muted: #78766D;
+    --gold: #B4863A;
+    --gold-bright: #D6A855;
+    --line-on-dark: rgba(238,234,224,0.14);
+    --line-on-light: rgba(42,41,36,0.15);
+    --max: 1120px;
+    --max-wide: 1280px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  [id]{scroll-margin-top:88px;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--parchment);
+    color:var(--body-text);
+    font-family:'Work Sans', sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    margin:0;
+    line-height:1.1;
+    letter-spacing:-0.01em;
+  }
+
+  p{margin:0;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+
+  .skip-link{
+    position:absolute; left:-9999px; top:0;
+    background:var(--gold); color:var(--ink); padding:12px 20px;
+    z-index:999; font-family:'IBM Plex Mono', monospace; font-size:0.85rem;
+  }
+  .skip-link:focus{left:16px; top:16px;}
+  :focus-visible{outline:2px solid var(--gold-bright); outline-offset:3px;}
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+  .wrap-wide{max-width:var(--max-wide); margin:0 auto; padding:0 28px;}
+
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{content:""; width:22px; height:1px; background:var(--gold);}
+  .eyebrow-light{color:var(--gold-bright);}
+
+  /* NAV */
+  header.site-nav{
+    position:sticky; top:0; z-index:100;
+    background:rgba(20,23,27,0.9);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line-on-dark);
+  }
+  .nav-inner{
+    max-width:var(--max); margin:0 auto; padding:14px 28px;
+    display:grid; grid-template-columns:1fr auto 1fr; align-items:center; column-gap:18px;
+    color:var(--ink-text);
+  }
+  .nav-links{
+    display:flex; align-items:center; gap:16px; justify-self:center;
+    font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.02em; text-transform:uppercase;
+  }
+  .nav-links a{
+    color:var(--ink-text-dim); text-decoration:none; white-space:nowrap;
+    transition:color .2s ease; padding:4px 0; border-bottom:1px solid transparent;
+  }
+  .nav-links a:hover{color:var(--gold-bright); border-bottom-color:var(--gold);}
+  .nav-links a.accent{color:var(--gold-bright);}
+  .nav-name{
+    font-family:'Fraunces', serif; font-weight:500; font-size:0.98rem;
+    letter-spacing:-0.01em; flex-shrink:0;
+  }
+  .nav-name span{color:var(--ink-text-dim); font-weight:400; font-size:0.7rem; display:block; font-family:'IBM Plex Mono', monospace; letter-spacing:0.05em; text-transform:uppercase; margin-top:1px;}
+  .nav-cta{
+    font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.03em;
+    color:var(--ink-text); border:1px solid var(--line-on-dark);
+    padding:9px 16px; border-radius:2px; text-decoration:none;
+    transition:border-color .2s ease, color .2s ease;
+    white-space:nowrap; flex-shrink:0;
+  }
+  .nav-cta:hover{border-color:var(--gold); color:var(--gold-bright);}
+  .brand-link{display:flex; align-items:center; gap:10px; text-decoration:none; justify-self:start;}
+  .nav-avatar{width:32px; height:32px; border-radius:50%; object-fit:cover;}
+  .brand-link:hover .nav-name{color:var(--gold-bright);}
+  .nav-right{display:flex; align-items:center; gap:14px; justify-self:end;}
+
+  .nav-toggle{
+    display:none; background:none; border:1px solid var(--line-on-dark); border-radius:2px;
+    width:40px; height:40px; padding:0; cursor:pointer; align-items:center; justify-content:center;
+    flex-shrink:0; position:relative;
+  }
+  .nav-toggle .bar{display:block; width:18px; height:1px; background:var(--ink-text); position:relative;}
+  .nav-toggle .bar::before, .nav-toggle .bar::after{content:""; position:absolute; left:0; width:18px; height:1px; background:var(--ink-text); transition:transform .2s ease, top .2s ease;}
+  .nav-toggle .bar::before{top:-6px;}
+  .nav-toggle .bar::after{top:6px;}
+  .nav-toggle[aria-expanded="true"] .bar{background:transparent;}
+  .nav-toggle[aria-expanded="true"] .bar::before{top:0; transform:rotate(45deg);}
+  .nav-toggle[aria-expanded="true"] .bar::after{top:0; transform:rotate(-45deg);}
+  .mobile-menu{display:none; position:fixed; inset:0; background:var(--ink); z-index:200; padding:96px 28px 40px; overflow-y:auto;}
+  .mobile-menu.open{display:block;}
+  .mobile-menu nav{display:flex; flex-direction:column;}
+  .mobile-menu nav a{font-family:'Fraunces', serif; font-size:1.4rem; font-weight:400; color:var(--ink-text); text-decoration:none; padding:16px 0; border-bottom:1px solid var(--line-on-dark);}
+  .mobile-menu nav a:hover{color:var(--gold-bright);}
+  .mobile-menu .mobile-cta{margin-top:30px; display:inline-block;}
+  .mobile-close{position:absolute; top:18px; right:20px; background:none; border:1px solid var(--line-on-dark); border-radius:2px; width:40px; height:40px; color:var(--ink-text); font-size:1.3rem; line-height:1; cursor:pointer;}
+  .mobile-close:hover{border-color:var(--gold); color:var(--gold-bright);}
+  body.menu-open{overflow:hidden;}
+  @media (max-width: 980px){ .nav-links{display:none;} .nav-toggle{display:flex;} }
+  @media (max-width: 600px){
+    .nav-cta{display:none;}
+    .nav-inner{display:flex; justify-content:space-between; align-items:center;}
+    .brand-link{flex:1 1 auto; min-width:0; margin-right:12px;}
+    .nav-name{min-width:0; overflow:hidden;}
+    .nav-name span{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+    .nav-right{flex:0 0 auto;}
+  }
+
+  section{padding:112px 0;}
+  @media (max-width: 760px){ section{padding:76px 0;} }
+  .on-ink{background:var(--ink); color:var(--ink-text);}
+  .on-ink-2{background:var(--ink-2); color:var(--ink-text);}
+  .on-parchment{background:var(--parchment); color:var(--body-text);}
+  .on-parchment-2{background:var(--parchment-2); color:var(--body-text);}
+
+  .btn{display:inline-block; font-family:'IBM Plex Mono', monospace; font-size:0.82rem; letter-spacing:0.03em; text-decoration:none; padding:15px 28px; border-radius:2px; transition:transform .18s ease, background .18s ease, border-color .18s ease, color .18s ease;}
+  .btn-primary{background:var(--gold); color:var(--ink); border:1px solid var(--gold);}
+  .btn-primary:hover{background:var(--gold-bright); border-color:var(--gold-bright); transform:translateY(-1px);}
+  .cta-row{margin-top:40px; display:flex; align-items:center; gap:22px; flex-wrap:wrap;}
+  .cta-secondary{font-family:'IBM Plex Mono', monospace; font-size:0.86rem; color:var(--ink-text); border-bottom:1px solid var(--line-on-dark); padding-bottom:3px; text-decoration:none; transition:color .2s ease, border-color .2s ease;}
+  .cta-secondary:hover{color:var(--gold-bright); border-color:var(--gold);}
+  .cta-secondary.on-light{color:var(--muted);}
+  .cta-secondary.on-light:hover{color:var(--gold);}
+  .section-link{font-family:'Fraunces', serif; font-style:italic; color:var(--body-text); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:1px;}
+  .section-link:hover{color:var(--gold);}
+  .section-link.on-dark{color:var(--ink-text);}
+
+  /* ===== SECTION HEAD (shared heading hierarchy, matches homepage scale) ===== */
+  .section-head{max-width:62ch; margin-bottom:64px;}
+  .section-head.centered{margin-left:auto; margin-right:auto; text-align:center;}
+  .section-head h2{font-size:clamp(1.9rem, 3.3vw, 2.4rem); line-height:1.25; max-width:24ch;}
+  .section-head.centered h2{margin-left:auto; margin-right:auto;}
+
+  /* ===== BODY COPY ===== */
+  .copy{max-width:64ch;}
+  .copy p{color:var(--body-text); font-size:1.08rem; line-height:1.8; margin:0 0 24px;}
+  .copy p:last-child{margin-bottom:0;}
+  .copy.on-dark p{color:var(--ink-text-dim);}
+  .copy.centered{margin-left:auto; margin-right:auto; text-align:center;}
+
+  /* ===== STANZA (short rhythmic lines) ===== */
+  .stanza{margin:26px 0;}
+  .stanza p{font-family:'Fraunces', serif; font-style:italic; font-size:1.14rem; line-height:1.6; color:var(--muted); margin:0 0 5px;}
+  .stanza.on-dark p{color:var(--ink-text-dim);}
+  .stanza.centered{margin-left:auto; margin-right:auto; text-align:center;}
+
+  /* ===== HERO ===== */
+  .hero{position:relative; background:var(--ink); color:var(--ink-text); padding:108px 0 96px; overflow:hidden;}
+  .hero-grid{display:grid; grid-template-columns:1.2fr 0.8fr; gap:56px; align-items:center;}
+  .hero h1{font-size:clamp(2.2rem, 4.2vw, 3.3rem); font-weight:400; color:var(--ink-text); max-width:17ch;}
+  .hero .body-text{margin-top:0; font-size:1.02rem; color:var(--ink-text-dim); max-width:50ch; line-height:1.7; margin-bottom:18px;}
+  .hero-image{border-radius:2px; overflow:hidden; background:var(--ink);}
+  .hero-image img{width:100%; height:100%; object-fit:cover;}
+  @media (max-width: 900px){ .hero-grid{grid-template-columns:1fr; gap:40px;} .hero-image{max-width:360px; margin:0 auto;} }
+
+  /* ===== WORK LIST (non-interactive dot markers) ===== */
+  .work-list{list-style:none; padding:0; margin:30px 0; max-width:64ch;}
+  .work-list li{position:relative; padding:15px 0 15px 26px; color:var(--body-text); font-size:1.06rem; line-height:1.7; border-top:1px solid var(--line-on-light);}
+  .work-list li:last-child{border-bottom:1px solid var(--line-on-light);}
+  .work-list li::before{content:""; position:absolute; left:2px; top:26px; width:6px; height:6px; border-radius:50%; background:var(--gold);}
+  .work-list li strong{color:var(--ink); font-weight:500;}
+  section.on-ink .work-list li, .on-ink .work-list li{color:var(--ink-text-dim); border-top-color:var(--line-on-dark);}
+  .on-ink .work-list li:last-child{border-bottom-color:var(--line-on-dark);}
+  .on-ink .work-list li strong{color:var(--ink-text);}
+  .pull-quote{font-family:'Fraunces', serif; font-style:italic; font-weight:500; font-size:clamp(1.3rem, 2.2vw, 1.6rem); color:var(--ink); border-left:2px solid var(--gold); padding-left:22px; max-width:46ch; margin-top:36px; line-height:1.5;}
+  .on-ink .pull-quote, .on-ink-2 .pull-quote{color:var(--ink-text);}
+
+  /* ===== MOMENT GRID (complete bordered grid, reused for recognition + moments) ===== */
+  .moment-grid{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line-on-light); border:1px solid var(--line-on-light); margin-top:48px;}
+  .moment-item{background:var(--parchment); padding:36px 40px;}
+  .moment-item h3{font-family:'Fraunces', serif; font-style:italic; font-weight:500; font-size:1.15rem; color:var(--ink); max-width:32ch; margin:0 0 8px; line-height:1.35;}
+  .moment-item p{color:var(--muted); font-size:0.98rem; max-width:42ch; line-height:1.65;}
+  .on-parchment-2 .moment-item{background:var(--parchment-2);}
+  @media (max-width: 760px){
+    .moment-grid{grid-template-columns:1fr;}
+  }
+
+  /* ===== JUMP LINKS (subtle 3-column anchor strip) ===== */
+  .jump-section{padding:56px 0;}
+  .jump-strip{display:grid; grid-template-columns:repeat(3, 1fr); gap:1px; background:var(--line-on-light); border:1px solid var(--line-on-light);}
+  .jump-item{background:var(--parchment-2); padding:26px 28px; text-decoration:none; display:block; transition:background .18s ease;}
+  .jump-item:hover, .jump-item:focus-visible{background:var(--parchment);}
+  .jump-q{display:block; font-family:'Fraunces', serif; font-style:italic; font-size:1rem; color:var(--ink); margin-bottom:8px; line-height:1.35;}
+  .jump-arrow{display:block; font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--gold); letter-spacing:0.02em;}
+  @media (max-width: 860px){ .jump-strip{grid-template-columns:1fr;} }
+
+  /* ===== HIGHLIGHT (centered emphasis line, dark sections) ===== */
+  .highlight{margin-top:56px; text-align:center;}
+  .highlight p{font-family:'Fraunces', serif; font-style:italic; font-weight:500; font-size:clamp(1.5rem, 3vw, 2rem); line-height:1.35; color:var(--gold-bright); max-width:24ch; margin:0 auto;}
+
+  /* ===== PATHWAY GRID (three editorial routes) ===== */
+  .pathway-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:1px; background:var(--line-on-light); border:1px solid var(--line-on-light); margin-top:48px;}
+  .pathway-item{background:var(--parchment); padding:40px 36px;}
+  .pathway-item .pathway-label{font-family:'IBM Plex Mono', monospace; font-size:0.74rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold); margin-bottom:14px; display:block;}
+  .pathway-item h3{font-family:'Fraunces', serif; font-weight:500; font-size:1.3rem; color:var(--ink); margin:0 0 14px; line-height:1.3;}
+  .pathway-item p{color:var(--muted); font-size:0.98rem; line-height:1.65; margin:0 0 12px;}
+  .pathway-item p:last-child{margin-bottom:0;}
+  @media (max-width: 860px){ .pathway-grid{grid-template-columns:1fr;} }
+
+  /* ===== FLOW GRID (loose developmental flow, no numbering) ===== */
+  .flow-grid{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line-on-light); border:1px solid var(--line-on-light); margin-top:40px;}
+  .flow-item{background:var(--parchment); padding:30px 34px;}
+  .on-parchment-2 .flow-item{background:var(--parchment-2);}
+  .flow-item h3{font-family:'Fraunces', serif; font-weight:500; font-size:1.08rem; color:var(--ink); margin:0 0 8px; line-height:1.3;}
+  .flow-item p{color:var(--muted); font-size:0.96rem; line-height:1.6; margin:0;}
+  @media (max-width: 760px){ .flow-grid{grid-template-columns:1fr;} }
+
+  /* ===== COMPARE GRID (two-column comparison) ===== */
+  .compare-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; margin-top:48px;}
+  .compare-col h3{margin-bottom:18px;}
+  @media (max-width: 760px){ .compare-grid{grid-template-columns:1fr; gap:40px;} }
+
+  /* ===== OUTCOMES GRID (two-column list, subtle dividers) ===== */
+  .outcomes-grid{display:grid; grid-template-columns:1fr 1fr; gap:0 48px; margin-top:8px;}
+  .outcomes-grid .work-list{margin:22px 0;}
+  @media (max-width: 760px){ .outcomes-grid{grid-template-columns:1fr; gap:0;} }
+
+  /* ===== CALLOUT BOX (single bordered card) ===== */
+  .callout-box{margin-top:48px; border:1px solid var(--line-on-light); border-radius:2px; padding:28px 32px; max-width:62ch;}
+  .callout-box .label{font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; display:block;}
+  .callout-box p{color:var(--body-text); font-size:1.05rem; line-height:1.65; margin:0 0 14px;}
+  .callout-box p:last-child{margin-bottom:0;}
+
+  /* ===== TAG ROW (compact inline list) ===== */
+  .tag-row{display:flex; flex-wrap:wrap; gap:10px 0; margin-top:28px; font-family:'IBM Plex Mono', monospace; font-size:0.82rem; color:var(--muted); letter-spacing:0.02em;}
+  .tag-row span{white-space:nowrap;}
+  @media (max-width: 600px){ .tag-row span{white-space:normal;} }
+  .tag-row span::after{content:"·"; margin:0 16px; color:var(--gold);}
+  .tag-row span:last-child::after{content:"";}
+
+  /* ===== EVIDENCE / TESTIMONIALS ===== */
+  .testi-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:1px; background:var(--line-on-dark); border:1px solid var(--line-on-dark); margin-top:48px;}
+  .testi-card{background:var(--ink-2); padding:38px 36px; display:flex; flex-direction:column; justify-content:space-between; min-height:200px;}
+  .testi-card .mark{font-family:'Fraunces', serif; font-size:2.4rem; color:var(--gold); line-height:1; margin:0 0 6px;}
+  .testi-card .quote{font-family:'Fraunces', serif; font-style:italic; font-size:1.06rem; color:var(--ink-text); line-height:1.5;}
+  .testi-card .attrib{margin-top:24px; font-family:'IBM Plex Mono', monospace; font-size:0.76rem; color:var(--ink-text-dim); letter-spacing:0.02em;}
+  .testi-card .attrib strong{display:block; color:var(--gold-bright); font-size:0.84rem; margin-bottom:3px; font-weight:500;}
+  @media (max-width: 760px){ .testi-grid{grid-template-columns:1fr;} }
+
+  /* ===== CLOSING ===== */
+  .closing{text-align:center; background:var(--ink); color:var(--ink-text);}
+  .closing h2{font-size:clamp(1.9rem, 3.6vw, 2.7rem); max-width:20ch; margin:0 auto; line-height:1.3;}
+  .closing .sub{font-family:'Fraunces', serif; font-style:italic; font-size:1.1rem; color:var(--ink-text-dim); max-width:52ch; margin:26px auto 0; line-height:1.6;}
+  .closing .cta-row{justify-content:center; flex-direction:column; gap:18px;}
+  .closing-sig{margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:0.82rem; color:var(--ink-text-dim); line-height:1.8;}
+  .closing-sig .name{display:block; font-family:'Fraunces', serif; font-size:1.1rem; color:var(--ink-text); margin-bottom:6px;}
+
+  footer{background:var(--ink); border-top:1px solid var(--line-on-dark); padding:32px 0;}
+  .footer-inner{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; color:var(--ink-text-dim); font-family:'IBM Plex Mono', monospace; font-size:0.78rem;}
+  .footer-right{display:flex; align-items:center; gap:22px; flex-wrap:wrap;}
+  .footer-right a{color:var(--ink-text-dim); text-decoration:none;}
+  .footer-right a:hover{color:var(--gold-bright);}
+</style>
+</head>
+<body>
+
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="/" class="brand-link">
+      <img class="nav-avatar" src="speaking-headshot.jpg" alt="Robert Stephenson" loading="eager">
+      <div class="nav-name">Robert Stephenson<span>Leadership · Teams · Narrative</span></div>
+    </a>
+    <nav class="nav-links" aria-label="Page sections">
+      <a href="/">Home</a>
+      <a href="/narrative-coaching">Narrative Coaching</a>
+      <a href="/experience">Experience</a>
+      <a href="/ideas">Ideas</a>
+      <a href="/ways-of-working">Work With Me</a>
+    </nav>
+    <div class="nav-right">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" onclick="toggleMobileMenu()"><span class="bar"></span></button>
+      <a class="nav-cta" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a Conversation</a>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" type="button" aria-label="Close menu" onclick="toggleMobileMenu(false)">&times;</button>
+  <nav aria-label="Mobile page navigation">
+    <a href="/">Home</a>
+    <a href="/narrative-coaching">Narrative Coaching</a>
+    <a href="/experience">Experience</a>
+    <a href="/ideas">Ideas</a>
+    <a href="/ways-of-working">Work With Me</a>
+  </nav>
+  <a class="btn btn-primary mobile-cta" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a Conversation →</a>
+</div>
+
+<main id="main">
+
+  <!-- 1. HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow eyebrow-light">Teams &amp; Facilitation</p>
+        <h1>Sometimes the work isn't with one person. It's with the room.</h1>
+        <p class="body-text">A team is more than the individuals sitting around the table. It is also the relationships between them. The conversations they have, and the ones they avoid. The assumptions they carry about one another. The habits that have become normal. The way responsibility, authority, trust and challenge move through the room.</p>
+        <p class="body-text">My work with leadership teams creates space to notice those patterns, work with what is actually happening and build different ways of thinking, relating and acting together.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a conversation →</a>
+          <a class="cta-secondary" href="#recognition">Recognise what may be happening</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="facilitator-signature.jpg" alt="Robert Stephenson facilitating a leadership session, mid-gesture in front of a flipchart with a group listening" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- JUMP LINKS -->
+  <section class="on-parchment-2 jump-section">
+    <div class="wrap">
+      <div class="jump-strip">
+        <a class="jump-item" href="#pathways">
+          <span class="jump-q">I'm trying to work out what we need</span>
+          <span class="jump-arrow">Team Coaching · Facilitation · Development →</span>
+        </a>
+        <a class="jump-item" href="#team-as-client">
+          <span class="jump-q">I want to understand how the work happens</span>
+          <span class="jump-arrow">How we begin, and how the work develops →</span>
+        </a>
+        <a class="jump-item" href="#outcomes">
+          <span class="jump-q">I want to see what difference it can make</span>
+          <span class="jump-arrow">Outcomes and evidence →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. RECOGNITION -->
+  <section class="on-parchment" id="recognition">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What may be happening</p>
+        <h2>The capability may be there. Something between you is getting in the way.</h2>
+      </div>
+      <div class="moment-grid">
+        <div class="moment-item">
+          <h3>The same conversations keep returning.</h3>
+          <p>You talk about the issue, agree what needs to happen and somehow find yourselves back in the same place.</p>
+        </div>
+        <div class="moment-item">
+          <h3>People are holding back.</h3>
+          <p>There is more agreement in the meeting than there is afterwards. Important things are being said elsewhere, or not at all.</p>
+        </div>
+        <div class="moment-item">
+          <h3>Accountability is uneven.</h3>
+          <p>A few people carry too much while responsibility slips between roles, functions or individuals.</p>
+        </div>
+        <div class="moment-item">
+          <h3>Conflict is either avoided or consumes too much energy.</h3>
+          <p>Difference is becoming personal, political or simply too difficult to work with productively.</p>
+        </div>
+        <div class="moment-item">
+          <h3>You have strong individuals but not yet a strong team.</h3>
+          <p>People perform well in their own areas, but collective thinking, ownership and decision-making are weaker than they need to be.</p>
+        </div>
+        <div class="moment-item">
+          <h3>Something has changed.</h3>
+          <p>A restructure, new strategy, merger, leadership transition or shift in purpose means the team needs to become something different from what it has been.</p>
+        </div>
+      </div>
+      <div class="highlight">
+        <p style="color:var(--ink);">What is happening between us that we cannot solve simply by working harder as individuals?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. THE TEAM AS CLIENT -->
+  <section class="on-ink-2" id="team-as-client">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-light">From individuals to system</p>
+        <h2 style="color:var(--ink-text);">The team itself becomes the client.</h2>
+      </div>
+      <div class="copy on-dark">
+        <p>Team coaching is not simply one-to-one coaching carried out with several people in the room.</p>
+        <p>The focus shifts. We become interested not only in what each person thinks or does, but in what the team creates together.</p>
+      </div>
+      <div class="stanza on-dark">
+        <p>How decisions get made.</p>
+        <p>Whose voices carry weight.</p>
+        <p>What happens when people disagree.</p>
+        <p>Where responsibility sits.</p>
+        <p>What the team says it values, and what its behaviour actually rewards.</p>
+        <p>How the team responds under pressure.</p>
+        <p>What stakeholders need from it.</p>
+      </div>
+      <div class="copy on-dark">
+        <p>And what patterns continue even when individual people change.</p>
+        <p>The work is not about diagnosing who is &ldquo;the problem&rdquo;. It is about helping the team see itself more clearly as a system and increasing the choices available to it.</p>
+      </div>
+      <div class="highlight">
+        <p>A team is more than the sum of its individual profiles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. THREE DIFFERENT WAYS WE MAY WORK -->
+  <section class="on-parchment" id="pathways">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Different needs. Different forms of work.</p>
+        <h2>You don't need to diagnose the intervention before we speak.</h2>
+      </div>
+      <div class="pathway-grid">
+        <div class="pathway-item">
+          <span class="pathway-label">Team Coaching</span>
+          <h3>Best when the team itself is the work.</h3>
+          <p>The focus is on live relationships, recurring patterns, collective behaviour, stakeholder value and how the team functions as a system over time.</p>
+          <p>Team coaching usually involves working together across multiple sessions so the team can notice patterns, experiment and build new ways of working.</p>
+        </div>
+        <div class="pathway-item">
+          <span class="pathway-label">Facilitation</span>
+          <h3>Best when the team needs to get somewhere important together.</h3>
+          <p>That might mean making a decision, resolving a difficult issue, creating strategy, resetting how the team works or having a conversation that would be difficult to hold without an external facilitator.</p>
+          <p>The facilitator holds the process so the team can focus on the work.</p>
+        </div>
+        <div class="pathway-item">
+          <span class="pathway-label">Leadership Team Development</span>
+          <h3>Best when a team needs a mixture of learning, reflection and application.</h3>
+          <p>This may bring together team development, practical leadership tools, facilitated dialogue and live work on the team's real challenges.</p>
+        </div>
+      </div>
+      <p class="pull-quote">Sometimes the right answer is one of these. Often the work moves between them.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a conversation →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. MOMENTS THAT MATTER -->
+  <section class="on-parchment-2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">When teams seek support</p>
+        <h2>Teams usually seek support at moments that matter.</h2>
+      </div>
+      <div class="moment-grid">
+        <div class="moment-item">
+          <h3>A new leadership team is forming.</h3>
+        </div>
+        <div class="moment-item">
+          <h3>A team has inherited significant organisational change.</h3>
+        </div>
+        <div class="moment-item">
+          <h3>Relationships have become strained, or trust has been damaged.</h3>
+        </div>
+        <div class="moment-item">
+          <h3>A new strategy requires stronger collective leadership.</h3>
+        </div>
+        <div class="moment-item">
+          <h3>Accountability is unclear, or the leader has become the centre of too many decisions.</h3>
+        </div>
+        <div class="moment-item">
+          <h3>The team is working in silos, or difficult conversations keep being postponed.</h3>
+        </div>
+        <div class="moment-item">
+          <h3>Performance is good but collective potential is not being realised.</h3>
+        </div>
+        <div class="moment-item">
+          <h3>A merger, restructure or transition has altered the system, or stakeholders need something different from the team.</h3>
+        </div>
+      </div>
+      <div class="highlight">
+        <p style="color:var(--ink);">The starting point is not &ldquo;Which workshop should we run?&rdquo; It is &ldquo;What is this team being asked to become?&rdquo;</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. WHAT ROBERT PAYS ATTENTION TO -->
+  <section class="on-ink">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-light">Working with what is live</p>
+        <h2 style="color:var(--ink-text);">Warmth, challenge and attention to what is happening between people.</h2>
+      </div>
+      <div class="copy on-dark">
+        <p>I pay attention not only to what the team is talking about, but to how the team is talking.</p>
+      </div>
+      <div class="stanza on-dark">
+        <p>Who enters the conversation.</p>
+        <p>Who disappears.</p>
+        <p>What can be challenged.</p>
+        <p>What cannot.</p>
+        <p>Where energy rises.</p>
+        <p>Where responsibility moves.</p>
+        <p>What people laugh away.</p>
+        <p>What happens after someone takes a risk.</p>
+      </div>
+      <div class="copy on-dark">
+        <p>The room itself provides information. My role is not to arrive with a judgement about what the team should become. It is to help the team see itself more clearly, work with what is actually happening and make more intentional choices together.</p>
+      </div>
+      <p class="pull-quote">My job is to help the team see more clearly, stay with difficulty, question old patterns and increase its range of choice.</p>
+    </div>
+  </section>
+
+  <!-- 7. HOW THE WORK BEGINS -->
+  <section class="on-parchment">
+    <div class="wrap">
+      <div class="compare-grid" style="margin-top:0; align-items:start;">
+        <div class="compare-col">
+          <p class="eyebrow">Before we enter the room</p>
+          <h2 style="font-size:clamp(1.9rem, 3.3vw, 2.4rem); line-height:1.25; margin-bottom:20px;">Good team work starts before the session.</h2>
+          <div class="copy">
+            <p>The quality of the work depends on understanding the context first. Before working with a team, I will usually speak with the team leader and, where appropriate, other stakeholders.</p>
+            <p>Where appropriate, I may also speak with individual team members before we begin. The purpose is not to arrive with a diagnosis. It is to understand enough of the system to enter the room intelligently.</p>
+          </div>
+          <p class="section-link" style="margin-top:20px; display:inline-block; font-size:1.15rem;"><a href="/questions#teams">See common questions about facilitation →</a></p>
+        </div>
+        <div class="compare-col">
+          <h3>Before we begin, we explore</h3>
+          <ul class="work-list">
+            <li>Why now, and what is happening</li>
+            <li>What has already been tried</li>
+            <li>What the team believes the issue is, and what other stakeholders need from the team</li>
+            <li>What success would look like, and what should and should not be part of the work</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. HOW TEAM COACHING DEVELOPS -->
+  <section class="on-parchment-2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The work over time</p>
+        <h2>We begin with the real work of the team.</h2>
+      </div>
+      <div class="copy">
+        <p>This is how the work tends to develop, not a prescribed methodology every team must follow. Each engagement moves through this territory at its own pace, and not always in a straight line.</p>
+      </div>
+      <div class="flow-grid">
+        <div class="flow-item"><h3>Understand the context</h3><p>What is the team here to achieve, for whom, and why does it matter now?</p></div>
+        <div class="flow-item"><h3>Contract with the team</h3><p>Clarify purpose, expectations, confidentiality, roles and what the team is willing to work on.</p></div>
+        <div class="flow-item"><h3>Work with what happens in the room</h3><p>Real interactions become material for the work, rather than something to move past to reach the agenda.</p></div>
+        <div class="flow-item"><h3>Experiment</h3><p>The team tries different ways of speaking, deciding, challenging, listening and taking responsibility.</p></div>
+        <div class="flow-item"><h3>Reconnect to stakeholders and purpose</h3><p>Not only whether the team feels better together, but whether it is creating greater value for the people and systems it serves.</p></div>
+        <div class="flow-item"><h3>Review and integrate</h3><p>Notice what has changed, what remains difficult and what the team now needs to continue without the coach.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. WHAT BECOMES DIFFERENT -->
+  <section class="on-parchment" id="outcomes">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What good work makes possible</p>
+        <h2>Greater awareness should create greater collective choice.</h2>
+      </div>
+      <div class="copy">
+        <p>Every team and engagement is different. Areas the work can support include:</p>
+      </div>
+      <div class="outcomes-grid">
+        <ul class="work-list">
+          <li>Clearer purpose and priorities, and more honest conversations</li>
+          <li>Greater trust without avoiding challenge</li>
+          <li>Clearer decision-making and stronger accountability</li>
+          <li>Less dependency on the team leader, and more productive conflict</li>
+        </ul>
+        <ul class="work-list">
+          <li>Better use of difference, and greater awareness of recurring patterns</li>
+          <li>More collective ownership and a stronger stakeholder focus</li>
+          <li>A team that can notice and adjust itself without always needing external support</li>
+        </ul>
+      </div>
+      <p class="pull-quote">The goal is not dependence on the coach. It is a team increasingly able to see, challenge and develop itself.</p>
+    </div>
+  </section>
+
+  <!-- 10. THE ENNEAGRAM -->
+  <section class="on-parchment-2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">One possible lens</p>
+        <h2>The Enneagram can support the work, but it is not always the starting point.</h2>
+      </div>
+      <div class="copy">
+        <p>Where appropriate, the iEQ9 Enneagram can give a team useful language for patterns of attention, motivation, behaviour and relationship. It can help people understand themselves and one another with greater nuance.</p>
+        <p>But I do not begin by assuming the team needs a profile. Sometimes the most useful material is already happening visibly in the room. The Enneagram is one lens within a wider systemic practice, not the programme itself.</p>
+      </div>
+      <p style="margin-top:28px; font-size:1.15rem;"><a class="section-link" href="/enneagram">Explore Enneagram work →</a></p>
+    </div>
+  </section>
+
+  <!-- 11. FACILITATION VS TEAM COACHING -->
+  <section class="on-parchment">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Which kind of support?</p>
+        <h2>Facilitation and team coaching are related, but not identical.</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-col">
+          <h3>Facilitation may be the better fit when</h3>
+          <ul class="work-list">
+            <li>There is a specific conversation or outcome to reach</li>
+            <li>The team needs structured dialogue</li>
+            <li>A strategy, decision or plan needs to be created</li>
+            <li>Conflict or complexity makes it difficult to facilitate yourselves</li>
+            <li>An external neutral process would help the group move forward</li>
+          </ul>
+        </div>
+        <div class="compare-col">
+          <h3>Team coaching may be the better fit when</h3>
+          <ul class="work-list">
+            <li>The patterns themselves need attention</li>
+            <li>The team wants to improve how it works over time</li>
+            <li>Relationships, trust or accountability need to change</li>
+            <li>Recurring issues survive individual meetings or interventions</li>
+            <li>The team needs to become better at noticing and adjusting itself</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pull-quote">Sometimes an initial facilitated conversation reveals that further team coaching would be useful. Sometimes one well-designed session is enough.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Tell me what is happening →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. REAL LEADERSHIP SETTINGS / EVIDENCE -->
+  <section class="on-ink-2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-light">Grounded in the room</p>
+        <h2 style="color:var(--ink-text);">Work grounded in real leadership settings.</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div><p class="mark">&ldquo;</p><p class="quote">I have been very fortunate to have had the privilege to listen to international sporting coaches, garnishing their tips, seeking their point of difference and edge. Robert Stephenson is right up there with them all. I have rarely seen connection and delivery like it.</p></div>
+          <p class="attrib"><strong>Graeme Young</strong>Head of People Service Delivery, Heathrow</p>
+        </div>
+        <div class="testi-card">
+          <div><p class="mark">&ldquo;</p><p class="quote">Over the past 12 months Rob and Will have been hugely influential in my business, both strategically and operationally, and I can't recommend them highly enough.</p></div>
+          <p class="attrib"><strong>Duncan Cormack</strong>CEO, Cormack Advertising</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. ROBERT'S APPROACH TO TEAMS -->
+  <section class="on-parchment">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How I work with teams</p>
+        <h2>Coaching the team with care.</h2>
+      </div>
+      <div class="copy">
+        <p>Working with a team differs from coaching one person. Multiple perspectives, histories, identities, power dynamics and stakeholder relationships are all in the room at once.</p>
+        <p>My role is to create enough safety for honesty, enough challenge for something real without it becoming performance, and enough structure to keep the work moving without over-controlling the room.</p>
+        <p>My team work draws on systemic and analytic approaches, Narrative Coaching, the Enneagram, facilitation and years of working with leadership groups. Methods remain secondary to what the team actually needs.</p>
+      </div>
+      <p class="pull-quote">The work is serious. It does not have to be solemn.</p>
+      <div class="tag-row">
+        <span>CEOs</span><span>Leadership Teams</span><span>HR / People / L&amp;D</span><span>Organisational Sponsors</span><span>Team Leaders</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. CLOSING -->
+  <section class="closing" id="contact">
+    <div class="wrap">
+      <p class="eyebrow eyebrow-light" style="justify-content:center;">Start with the team</p>
+      <h2>You do not need to diagnose the team before beginning the conversation.</h2>
+      <p class="sub">Tell me what is happening. What keeps repeating. What is difficult to say. What the team is trying to achieve. From there, we can work out whether the most useful starting point is facilitation, team coaching, development or something else.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a Conversation →</a>
+      </div>
+      <div class="closing-sig">
+        <span class="name">Robert Stephenson PCC</span>
+        Leadership · Teams · Narrative
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> Robert Stephenson</span>
+    <div class="footer-right">
+      <a href="mailto:robert@robertstephensoncoaching.com">robert@robertstephensoncoaching.com</a>
+      <a href="/narrative-coaching">Narrative Coaching</a>
+      <a href="/experience">Experience</a>
+      <a href="/ideas">Ideas</a>
+      <a href="/questions">Questions</a>
+      <a href="/ways-of-working">Work With Me</a>
+      <a href="/privacy">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMobileMenu(force){
+    var btn = document.querySelector('.nav-toggle');
+    var menu = document.getElementById('mobile-menu');
+    if (!btn || !menu) return;
+    var open = (typeof force === 'boolean') ? force : !menu.classList.contains('open');
+    menu.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.classList.toggle('menu-open', open);
+  }
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') toggleMobileMenu(false); });
+  document.querySelectorAll('#mobile-menu a').forEach(function(a){ a.addEventListener('click', function(){ toggleMobileMenu(false); }); });
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function openCalendly(e){
+    if (window.Calendly) {
+      e.preventDefault();
+      Calendly.initPopupWidget({url: 'https://calendly.com/robertstephenson/20-minute-chat'});
+      return false;
+    }
+    return true;
+  }
+</script>
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+</body>
+</html>

@@ -15,6 +15,7 @@
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://robertstephensoncoaching.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Robert Stephenson Coaching","url":"https://robertstephensoncoaching.com/"},{"@type":"Person","name":"Robert Stephenson","url":"https://robertstephensoncoaching.com/","jobTitle":"Executive Coach, Team Coach and Facilitator","knowsAbout":["Executive coaching","Leadership team coaching","Facilitation","Narrative Coaching","Enneagram"]}]}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -253,6 +254,11 @@
   .story-questions{margin:38px 0; padding-left:0; list-style:none;}
   .story-questions li{font-family:'Fraunces', serif; font-style:italic; font-size:1.2rem; color:var(--ink); padding:14px 0; border-top:1px solid var(--line-on-light);}
   .story-questions li:last-child{border-bottom:1px solid var(--line-on-light);}
+  .story-section .story-body p{color:var(--ink-text-dim);}
+  .story-section .story-questions li{color:var(--ink-text); border-top-color:var(--line-on-dark);}
+  .story-section .story-questions li:last-child{border-bottom-color:var(--line-on-dark);}
+  .story-section .section-link{color:var(--ink-text);}
+  .story-section .section-link:hover{color:var(--gold-bright);}
   @media (max-width: 860px){ .story-grid{grid-template-columns:1fr;} }
 
   /* ===== EVIDENCE ===== */
@@ -266,6 +272,9 @@
   .client-list{margin-top:56px; padding-top:40px; border-top:1px solid var(--line-on-dark);}
   .client-list-label{font-family:'Work Sans', sans-serif; font-size:0.96rem; color:var(--ink-text-dim); margin-bottom:20px; max-width:56ch;}
   .client-cloud{display:flex; flex-wrap:wrap; gap:10px 28px; font-family:'IBM Plex Mono', monospace; font-size:0.86rem; color:var(--ink-text-dim);}
+  .evidence-light .client-list{border-top-color:var(--line-on-light);}
+  .evidence-light .client-list-label,
+  .evidence-light .client-cloud{color:var(--muted);}
 
   /* ===== CLOSING ===== */
   .closing{text-align:center; background:var(--ink); color:var(--ink-text);}
@@ -456,7 +465,7 @@
   </section>
 
   <!-- 5. ROBERT / STORY -->
-  <section class="on-parchment">
+  <section class="on-ink-2 story-section">
     <div class="wrap story-grid">
       <div class="story-media">
         <img src="navy-portrait.jpg" alt="Robert Stephenson, warm and direct portrait" loading="lazy">
@@ -479,18 +488,18 @@
   </section>
 
   <!-- 6. EVIDENCE -->
-  <section class="on-ink-2">
+  <section class="on-parchment evidence-light">
     <div class="wrap">
-      <p class="eyebrow eyebrow-light">Client perspectives</p>
-      <h2 style="color:var(--ink-text); font-size:clamp(1.9rem, 3.3vw, 2.4rem); line-height:1.25; max-width:22ch;">What people experience.</h2>
+      <p class="eyebrow">Client perspectives</p>
+      <h2 style="font-size:clamp(1.9rem, 3.3vw, 2.4rem); line-height:1.25; max-width:22ch;">What people experience.</h2>
       <div class="testi-grid">
         <div class="testi-card">
           <div><p class="mark">&ldquo;</p><p class="quote">Robert's coaching style, listening skills and curiosity took me to a new personal level. To understand how focussing on me and my personal goals would help me in my professional life was life changing.</p></div>
           <p class="attrib"><strong>Alexis Ward</strong>Head of Adviser Experience, Scottish Widows</p>
         </div>
         <div class="testi-card">
-          <div><p class="mark">&ldquo;</p><p class="quote">Over the past 12 months Rob and Will have been hugely influential in my business, both strategically and operationally, and I can't recommend them highly enough.</p></div>
-          <p class="attrib"><strong>Duncan Cormack</strong>CEO, Cormack Advertising</p>
+          <div><p class="mark">&ldquo;</p><p class="quote">Some instructors teach you something. Robert Stephenson teaches you something you actually use in your next meeting.</p></div>
+          <p class="attrib"><strong>Ashleigh Tennent</strong>More Happi</p>
         </div>
       </div>
       <div class="client-list">

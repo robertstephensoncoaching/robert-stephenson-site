@@ -17,6 +17,13 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://robertstephensoncoaching.com/"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Robert Stephenson Coaching","url":"https://robertstephensoncoaching.com/"},{"@type":"Person","name":"Robert Stephenson","url":"https://robertstephensoncoaching.com/","jobTitle":"Executive Coach, Team Coach and Facilitator","knowsAbout":["Executive coaching","Leadership team coaching","Facilitation","Narrative Coaching","Enneagram"]}]}</script>
 
+<!-- MailerLite Universal -->
+<script>
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '2704290');
+</script>
+<!-- End MailerLite Universal -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -281,6 +288,19 @@
   .closing-sig{margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:0.82rem; color:var(--ink-text-dim); line-height:1.8;}
   .closing-sig .name{display:block; font-family:'Fraunces', serif; font-size:1.1rem; color:var(--ink-text); margin-bottom:6px;}
 
+  /* ===== SEEING DIFFERENTLY ===== */
+  .newsletter{background:var(--parchment-2); color:var(--body-text);}
+  .newsletter-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:72px; align-items:center;}
+  .newsletter h2{font-size:clamp(1.9rem, 3.3vw, 2.4rem); line-height:1.25; max-width:18ch;}
+  .newsletter-copy{margin-top:24px; color:var(--muted); font-size:1.03rem; line-height:1.75; max-width:54ch;}
+  .newsletter-note{margin-top:18px; font-family:'IBM Plex Mono', monospace; font-size:0.76rem; color:var(--muted);}
+  .newsletter-form{background:var(--parchment); border:1px solid var(--line-on-light); padding:34px; min-height:178px; display:flex; align-items:center;}
+  .newsletter-form .ml-embedded{width:100%;}
+  @media (max-width: 860px){
+    .newsletter-grid{grid-template-columns:1fr; gap:36px;}
+    .newsletter-form{padding:24px;}
+  }
+
   footer{background:var(--ink); border-top:1px solid var(--line-on-dark); padding:32px 0;}
   .footer-inner{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; color:var(--ink-text-dim); font-family:'IBM Plex Mono', monospace; font-size:0.78rem;}
   .footer-right{display:flex; align-items:center; gap:22px; flex-wrap:wrap;}
@@ -507,7 +527,22 @@
     </div>
   </section>
 
-  <!-- 7. CLOSING -->
+  <!-- 7. SEEING DIFFERENTLY -->
+  <section class="newsletter" aria-labelledby="seeing-differently-heading">
+    <div class="wrap newsletter-grid">
+      <div>
+        <p class="eyebrow">Seeing Differently</p>
+        <h2 id="seeing-differently-heading">A thoughtful note for people leading through complexity.</h2>
+        <p class="newsletter-copy">If you are not ready for a conversation, this is a quieter way to stay connected. Once a month, I share one story, question or observation from the work of leadership, teams and change. No leadership theatre. No manufactured certainty. Just something useful to help you see differently, choose deliberately and lead what comes next.</p>
+        <p class="newsletter-note">One thoughtful note a month. No noise. Unsubscribe whenever you like. Your email is used only to send Seeing Differently. <a href="/privacy">Privacy policy</a>.</p>
+      </div>
+      <div class="newsletter-form">
+        <div class="ml-embedded" data-form="WoSZV3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CLOSING -->
   <section class="closing" id="contact">
     <div class="wrap">
       <p class="eyebrow eyebrow-light" style="justify-content:center;">What are you facing?</p>

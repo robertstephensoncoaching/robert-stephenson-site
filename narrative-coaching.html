@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Narrative Coaching · Robert Stephenson</title>
-<meta name="description" content="Narrative Coaching for senior leaders: explore the stories, identities and assumptions shaping how you lead, and what becomes possible when you see them differently.">
+<title>Narrative Coaching for Senior Leaders | Robert Stephenson</title>
+<meta name="description" content="Narrative Coaching for senior leaders navigating change, identity and responsibility. Robert Stephenson PCC, based in London and working online internationally.">
 <link rel="canonical" href="https://robertstephensoncoaching.com/narrative-coaching">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://robertstephensoncoaching.com/narrative-coaching">
-<meta property="og:title" content="Narrative Coaching · Robert Stephenson">
-<meta property="og:description" content="Narrative Coaching for senior leaders: explore the stories, identities and assumptions shaping how you lead, and what becomes possible when you see them differently.">
+<meta property="og:title" content="Narrative Coaching for Senior Leaders | Robert Stephenson">
+<meta property="og:description" content="Explore the stories, identities and assumptions shaping how you lead, and what becomes possible when you see them differently.">
 <meta property="og:image" content="https://robertstephensoncoaching.com/hero-portrait.jpg">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://robertstephensoncoaching.com/"},{"@type":"ListItem","position":2,"name":"Narrative Coaching","item":"https://robertstephensoncoaching.com/narrative-coaching"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Narrative Coaching","provider":{"@type":"ProfessionalService","name":"Robert Stephenson Coaching"},"url":"https://robertstephensoncoaching.com/narrative-coaching"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Narrative Coaching for Senior Leaders","serviceType":"Narrative Coaching","description":"Narrative Coaching for senior leaders navigating change, identity and responsibility.","provider":{"@type":"ProfessionalService","name":"Robert Stephenson Coaching","url":"https://robertstephensoncoaching.com/"},"areaServed":[{"@type":"City","name":"London"},{"@type":"Country","name":"United Kingdom"},"Worldwide"],"url":"https://robertstephensoncoaching.com/narrative-coaching"}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -206,6 +206,32 @@
   .hero-image img{width:100%; height:100%; object-fit:cover;}
   @media (max-width: 900px){ .hero-grid{grid-template-columns:1fr; gap:40px;} .hero-image{max-width:360px; margin:0 auto;} }
 
+  /* ===== AT A GLANCE ===== */
+  .at-a-glance{padding-top:88px; padding-bottom:88px;}
+  .glance-intro{display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; align-items:start; margin-bottom:52px;}
+  .glance-intro h2{font-size:clamp(1.9rem, 3.3vw, 2.4rem); line-height:1.25; max-width:20ch;}
+  .glance-intro p{font-size:1.08rem; line-height:1.8; color:var(--muted); max-width:57ch;}
+  .glance-grid{display:grid; grid-template-columns:repeat(4, 1fr); gap:1px; background:var(--line-on-light); border:1px solid var(--line-on-light);}
+  .glance-card{background:var(--parchment-2); padding:30px 28px;}
+  .glance-card h3{font-size:1.16rem; line-height:1.35; margin-bottom:12px; color:var(--ink);}
+  .glance-card p{font-size:0.96rem; line-height:1.65; color:var(--muted);}
+  .glance-card a{color:var(--body-text); text-decoration:none; border-bottom:1px solid var(--gold);}
+  .glance-card a:hover{color:var(--gold);}
+  .proof-strip{display:grid; grid-template-columns:repeat(3, 1fr); border-top:1px solid var(--line-on-light); border-bottom:1px solid var(--line-on-light); margin-top:42px;}
+  .proof-item{padding:22px 24px; text-align:center; border-right:1px solid var(--line-on-light);}
+  .proof-item:last-child{border-right:0;}
+  .proof-item strong{display:block; font-family:'Fraunces', serif; font-size:1.12rem; font-weight:500; color:var(--ink); margin-bottom:4px;}
+  .proof-item span{display:block; font-family:'IBM Plex Mono', monospace; font-size:0.72rem; line-height:1.5; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em;}
+  @media (max-width: 900px){
+    .glance-intro{grid-template-columns:1fr; gap:24px;}
+    .glance-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width: 620px){
+    .glance-grid,.proof-strip{grid-template-columns:1fr;}
+    .proof-item{border-right:0; border-bottom:1px solid var(--line-on-light);}
+    .proof-item:last-child{border-bottom:0;}
+  }
+
   /* ===== STORY / CHARACTER / IDENTITY ===== */
   .story-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:64px; align-items:start;}
   .story-media{border-radius:2px; overflow:hidden; background:var(--ink-3); aspect-ratio:4/5;}
@@ -314,7 +340,7 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow eyebrow-light">Narrative Coaching</p>
+        <p class="eyebrow eyebrow-light">Narrative Coaching for Senior Leaders</p>
         <h1>We live inside stories.</h1>
         <div class="stanza on-dark">
           <p>Stories about who we are.</p>
@@ -337,7 +363,43 @@
     </div>
   </section>
 
-  <!-- 2. WHY STORY MATTERS -->
+  <!-- 2. NARRATIVE COACHING AT A GLANCE -->
+  <section class="on-parchment at-a-glance" aria-labelledby="narrative-at-a-glance">
+    <div class="wrap">
+      <div class="glance-intro">
+        <div>
+          <p class="eyebrow">At a glance</p>
+          <h2 id="narrative-at-a-glance">A different way to work with the story shaping the role.</h2>
+        </div>
+        <p>Narrative Coaching is a reflective, practical approach for leaders who want to understand the stories, identities and assumptions influencing how they see a situation. The aim is not to replace one fixed story with another. It is to make more of the landscape visible, so you can choose what happens next with greater freedom and intention.</p>
+      </div>
+      <div class="glance-grid">
+        <article class="glance-card">
+          <h3>What it is</h3>
+          <p>A coaching conversation that explores how story, identity, relationship and role are shaping the challenge in front of you.</p>
+        </article>
+        <article class="glance-card">
+          <h3>Who it helps</h3>
+          <p>Senior leaders navigating greater responsibility, transition, uncertainty, difficult relationships or a way of leading that no longer quite fits.</p>
+        </article>
+        <article class="glance-card">
+          <h3>What can change</h3>
+          <p>You may see more choice, loosen an identity that has become restrictive, find different language and act with greater clarity.</p>
+        </article>
+        <article class="glance-card">
+          <h3>How it begins</h3>
+          <p>Start with a confidential conversation about what is happening. We can then decide whether this is the right approach for you. <a href="https://calendly.com/robertstephenson/20-minute-chat" onclick="return openCalendly(event)" rel="noopener">Book a conversation</a>.</p>
+        </article>
+      </div>
+      <div class="proof-strip" aria-label="Robert Stephenson coaching credentials and availability">
+        <div class="proof-item"><strong>ICF PCC</strong><span>Professional Certified Coach</span></div>
+        <div class="proof-item"><strong>5,000+ hours</strong><span>Coaching and facilitation</span></div>
+        <div class="proof-item"><strong>London and online</strong><span>UK and international work</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. WHY STORY MATTERS -->
   <section class="on-parchment">
     <div class="wrap">
       <div class="section-head">

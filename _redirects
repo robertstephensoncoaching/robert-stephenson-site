@@ -1,4 +1,5 @@
 # Permanent replacements; Cloudflare Pages handles normal .html URLs itself.
+/ideas/what-is-narrative-coaching /what-is-narrative-coaching.html 200
 /facilitation /team-coaching 301
 /facilitation.html /team-coaching 301
 /facilitation/ /team-coaching 301
